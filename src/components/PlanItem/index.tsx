@@ -8,7 +8,9 @@ const extractTitleFromMarkdown = (markdown: string) => {
   // Look for a title in the format ### **Title**
   const titleMatch = markdown.match(/###\s+\*\*([^*]+)\*\*/);
   if (titleMatch && titleMatch[1]) {
-    return titleMatch[1].trim();
+    // Remove the numbered prefix (e.g., "1. ") if it exists
+    const title = titleMatch[1].trim();
+    return title.replace(/^\d+\.\s+/, '');
   }
   return null;
 };
@@ -37,7 +39,17 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
       {isExpanded && (
         <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
           <div className="prose max-w-none">
-            <ReactMarkdown>
+            <ReactMarkdown components={{
+              // Skip the first h3 heading since we already show it in the card header
+              h3: ({ node, ...props }) => {
+                // Check if this is the first h3 in the document
+                const isFirstH3 = node.position?.start.line === 1;
+                if (isFirstH3) {
+                  return null; // Don't render the first h3
+                }
+                return <h3 {...props} />;
+              }
+            }}>
               {content}
             </ReactMarkdown>
           </div>
