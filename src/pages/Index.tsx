@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -170,7 +169,6 @@ const Index = () => {
         </section>
         
         <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
-          <p className="mb-2">Deltaplan voor AI Transitie {new Date().getFullYear()}</p>
           <p>
             Schrijf zelf mee via <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">onze Github</a>
           </p>
