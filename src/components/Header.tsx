@@ -4,9 +4,16 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="text-center mb-12">
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
-        Nederland klaarmaken voor komst Superintelligentie
-      </h1>
+      <div className="flex justify-center items-center mb-4">
+        <div className="w-8 h-6 mr-2 flex flex-col">
+          <div className="w-full h-1/3 bg-[#AE1C28]"></div>
+          <div className="w-full h-1/3 bg-white"></div>
+          <div className="w-full h-1/3 bg-[#21468B]"></div>
+        </div>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          AIPlan NL
+        </h1>
+      </div>
       <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
         Een Deltaplan voor de AI Transitie
       </h2>
