@@ -9,16 +9,18 @@ import NewsletterCTA from '../components/NewsletterCTA';
 import Footer from '../components/Footer';
 
 // Import all plan item short markdown content
-import item1Short from '../../plan-items/item-1-short.md?raw';
-import item2Short from '../../plan-items/item-2-short.md?raw';
-import item3Short from '../../plan-items/item-3-short.md?raw';
-import item4Short from '../../plan-items/item-4-short.md?raw';
-import item5Short from '../../plan-items/item-5-short.md?raw';
-import item6Short from '../../plan-items/item-6-short.md?raw';
-import item7Short from '../../plan-items/item-7-short.md?raw';
-import item8Short from '../../plan-items/item-8-short.md?raw';
-import item9Short from '../../plan-items/item-9-short.md?raw';
-import item10Short from '../../plan-items/item-10-short.md?raw';
+import { useLanguage } from '@/context/LanguageContext';
+
+const shortNlObj = import.meta.glob('../../plan-items/nl/item-*-short.md', { eager: true, as: 'raw' });
+const shortEnObj = import.meta.glob('../../plan-items/en/item-*-short.md', { eager: true, as: 'raw' });
+
+const sortShorts = (obj: Record<string, string>) =>
+  Object.entries(obj)
+    .sort((a, b) => parseInt(a[0].match(/item-(\d+)-/)! [1]) - parseInt(b[0].match(/item-(\d+)-/)! [1]))
+    .map(([, content]) => content);
+
+const shortsNl = sortShorts(shortNlObj);
+const shortsEn = sortShorts(shortEnObj);
 
 const extractTitleFromMarkdown = (markdown: string) => {
   // Look for a title in the format ### **Title**
@@ -32,13 +34,9 @@ const extractTitleFromMarkdown = (markdown: string) => {
 };
 
 const Index = () => {
-  // Collect all imported items in an array
-  const itemShortContents = [
-    item1Short, item2Short, item3Short, item4Short, item5Short, 
-    item6Short, item7Short, item8Short, item9Short, item10Short
-  ];
-  
-  // Generate plan items dynamically based on the imported content
+  const { language } = useLanguage();
+  const itemShortContents = language === 'en' ? shortsEn : shortsNl;
+
   const planItems = itemShortContents.map((content, index) => ({
     number: index + 1,
     content
@@ -49,16 +47,16 @@ const Index = () => {
       <div className="max-w-3xl mx-auto">
         <Header />
         
-        <IntroSection title="De mondiale AI race" />
-        <IntroSection title="Het is geen toekomstmuziek meer" />
-        <IntroSection title="Nederland's positie: van koploper naar achterblijver" />
-        <IntroSection title="De prijs van niets doen" />
+        <IntroSection section="globalRace" />
+        <IntroSection section="noLongerFuture" />
+        <IntroSection section="dutchPosition" />
+        <IntroSection section="priceOfInaction" />
         
         <DeltaPlanIntro />
         <PlanItemsList planItems={planItems} />
         
         <div className="my-20">
-          <IntroSection title="Een Nederlandse AI top" />
+          <IntroSection section="dutchSummit" />
         </div>
         
         <ContributionCTA />

@@ -1,11 +1,15 @@
 
 import React from 'react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Footer = () => {
+  const { language } = useLanguage();
   return (
     <footer className="text-center text-sm text-gray-500 mt-14 pt-8 border-t border-gray-200">
       <p className="mb-2">
-        Met dank aan Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins en Wouter van Noort
+        {language === 'nl'
+          ? 'Met dank aan Durk Kingma, Miles Brundage, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Wouter van Noort en Teddy Collins'
+          : 'With thanks to Durk Kingma, Miles Brundage, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Wouter van Noort and Teddy Collins'}
       </p>
     </footer>
   );
