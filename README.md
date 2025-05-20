@@ -22,7 +22,7 @@ Je kunt reageren op een issue door:
   * 👍 = upvote
   * 👎 = downvote
   * 👀 = volgen
-  * ❤️ = steun en enthousiasme
+  * ❤️ / 🎉 = steun of enthousiasme
 
 💡 *“Als je dit ook wil: geef een 👍 op het eerste bericht!”*
 
