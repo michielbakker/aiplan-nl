@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, MessageCircle, Mail } from 'lucide-react';
+import { ChevronLeft, MessageCircle } from 'lucide-react';
 
 // Import all detail markdown content
 import item1Detail from '../../plan-items/item-1-detail.md?raw';
@@ -56,7 +56,7 @@ const PlanDetail = () => {
         
         {/* Feedback section */}
         <div className="mt-12 pt-6 border-t border-gray-200">
-          <div className="flex items-center gap-2 text-gray-600 mb-6">
+          <div className="flex items-center gap-2 text-gray-600">
             <MessageCircle size={20} />
             <span>Heb je feedback, suggesties of relevante links? </span>
             <a 
@@ -66,22 +66,6 @@ const PlanDetail = () => {
               className="text-blue-600 hover:text-blue-800 hover:underline"
             >
               Open een issue op GitHub.
-            </a>
-          </div>
-          
-          {/* Newsletter section */}
-          <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Mail size={20} className="text-blue-600" />
-              <span className="font-medium">Wil je op de hoogte gehouden worden?</span>
-            </div>
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
-            >
-              Laat je email achter
             </a>
           </div>
         </div>
