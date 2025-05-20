@@ -43,7 +43,10 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
               // Skip all h3 headings since they would be duplicates of the card title
               h3: ({ node, ...props }) => {
                 // Check if this is a title heading (usually has ** markers)
-                const content = node.children?.[0]?.value || '';
+                const content = node.children?.[0]?.type === 'text' 
+                  ? (node.children[0] as { value: string }).value 
+                  : '';
+                
                 if (content.includes('**')) {
                   return null; // Don't render title headings
                 }
