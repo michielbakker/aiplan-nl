@@ -205,7 +205,7 @@ const Index = () => {
         <div className="my-10 rounded-lg overflow-hidden shadow-md bg-blue-50">
           <div className="p-5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <h3 className="text-lg font-bold text-gray-800">Wil je op de hoogte gehouden worden?</h3>
+              <h3 className="text-lg font-bold text-gray-800">Wil je op een andere manier bijdrage of op de hoogte blijven?</h3>
               <Button 
                 asChild
                 size="default"
