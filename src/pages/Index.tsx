@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Header from '../components/Header';
 import IntroSection from '../components/IntroSection';
 import DeltaPlanIntro from '../components/DeltaPlanIntro';
@@ -7,42 +7,42 @@ import PlanItemsList from '../components/PlanItemsList';
 import ContributionCTA from '../components/ContributionCTA';
 import NewsletterCTA from '../components/NewsletterCTA';
 import Footer from '../components/Footer';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { useMarkdownContent } from '@/utils/markdownLoader';
 
-// We'll use dynamic loading for plan items based on language
+// Import all plan item short markdown content
+import item1Short from '../../plan-items/item-1-short.md?raw';
+import item2Short from '../../plan-items/item-2-short.md?raw';
+import item3Short from '../../plan-items/item-3-short.md?raw';
+import item4Short from '../../plan-items/item-4-short.md?raw';
+import item5Short from '../../plan-items/item-5-short.md?raw';
+import item6Short from '../../plan-items/item-6-short.md?raw';
+import item7Short from '../../plan-items/item-7-short.md?raw';
+import item8Short from '../../plan-items/item-8-short.md?raw';
+import item9Short from '../../plan-items/item-9-short.md?raw';
+import item10Short from '../../plan-items/item-10-short.md?raw';
+
+const extractTitleFromMarkdown = (markdown: string) => {
+  // Look for a title in the format ### **Title**
+  const titleMatch = markdown.match(/###\s+\*\*([^*]+)\*\*/);
+  if (titleMatch && titleMatch[1]) {
+    // Remove the numbered prefix (e.g., "1. ") if it exists
+    const title = titleMatch[1].trim();
+    return title.replace(/^\d+\.\s+/, '');
+  }
+  return null;
+};
+
 const Index = () => {
-  const { language } = useLanguage();
-  const [planItems, setPlanItems] = useState<{ number: number; content: string }[]>([]);
-  const { loadShortContent } = useMarkdownContent();
+  // Collect all imported items in an array
+  const itemShortContents = [
+    item1Short, item2Short, item3Short, item4Short, item5Short, 
+    item6Short, item7Short, item8Short, item9Short, item10Short
+  ];
   
-  useEffect(() => {
-    const loadPlanItems = async () => {
-      try {
-        // Generate array of 1-10 numbers
-        const itemNumbers = Array.from({ length: 10 }, (_, i) => i + 1);
-        
-        // Load all short contents based on language
-        const items = await Promise.all(
-          itemNumbers.map(async (number) => {
-            try {
-              const content = await loadShortContent(number);
-              return { number, content };
-            } catch (error) {
-              console.error(`Failed to load content for item ${number}:`, error);
-              return { number, content: 'Content not available' };
-            }
-          })
-        );
-        
-        setPlanItems(items);
-      } catch (error) {
-        console.error('Failed to load plan items:', error);
-      }
-    };
-    
-    loadPlanItems();
-  }, [language]);
+  // Generate plan items dynamically based on the imported content
+  const planItems = itemShortContents.map((content, index) => ({
+    number: index + 1,
+    content
+  }));
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">

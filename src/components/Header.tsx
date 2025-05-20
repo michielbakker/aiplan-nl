@@ -1,23 +1,21 @@
 
 import React from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { getTranslation } from '@/utils/translations';
-import LanguageToggle from './LanguageToggle';
 
 const Header = () => {
-  const { language } = useLanguage();
-
   return (
-    <header className="text-center mb-12 relative">
-      <div className="absolute top-0 right-0">
-        <LanguageToggle />
+    <header className="text-center mb-12">
+      <div className="flex justify-center items-center mb-4">
+        <div className="w-8 h-6 mr-2 flex flex-col">
+          <div className="w-full h-1/3 bg-[#AE1C28]"></div>
+          <div className="w-full h-1/3 bg-white"></div>
+          <div className="w-full h-1/3 bg-[#21468B]"></div>
+        </div>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          AIPlan NL
+        </h1>
       </div>
-      
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
-        {getTranslation(language, 'header.title')}
-      </h1>
       <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
-        {getTranslation(language, 'header.subtitle')}
+        Een Deltaplan voor de AI Transitie
       </h2>
       <div className="flex justify-center items-center space-x-2 text-gray-600">
         <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
