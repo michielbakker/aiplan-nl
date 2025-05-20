@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -172,21 +171,18 @@ const Index = () => {
         </section>
         
         {/* Prominent contribution box */}
-        <div className="my-12 rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
-          <div className="p-6">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3">Schrijf zelf mee via onze Github</h3>
-                <p className="font-medium">Denk mee over het Deltaplan voor AI en draag bij aan deze belangrijke discussie.</p>
-              </div>
+        <div className="my-10 rounded-lg overflow-hidden shadow-md bg-gray-100">
+          <div className="p-5">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <h3 className="text-lg font-bold text-gray-800">Schrijf zelf mee via onze Github</h3>
               <Button 
                 asChild
-                size="lg"
-                variant="secondary" 
-                className="whitespace-nowrap bg-white text-indigo-700 hover:bg-gray-100 font-semibold"
+                size="default"
+                variant="default" 
+                className="whitespace-nowrap font-medium"
               >
                 <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <Github className="mr-2" size={20} />
+                  <Github className="mr-2" size={18} />
                   Naar Github
                 </a>
               </Button>
