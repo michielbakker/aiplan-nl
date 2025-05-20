@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -39,9 +39,11 @@ const PlanItem: React.FC<PlanItemProps> = ({
       
       {isExpanded && (
         <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
-          <ReactMarkdown className="prose max-w-none">
-            {content}
-          </ReactMarkdown>
+          <div className="prose max-w-none">
+            <ReactMarkdown>
+              {content}
+            </ReactMarkdown>
+          </div>
         </div>
       )}
     </Card>
