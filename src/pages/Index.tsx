@@ -1,10 +1,9 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
-import { Github } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
 // Import all plan item short markdown content
@@ -196,6 +195,26 @@ const Index = () => {
                 <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   <Github className="mr-2" size={18} />
                   Naar Github
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Newsletter sign-up highlight */}
+        <div className="my-10 rounded-lg overflow-hidden shadow-md bg-blue-50">
+          <div className="p-5">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <h3 className="text-lg font-bold text-gray-800">Wil je op de hoogte gehouden worden?</h3>
+              <Button 
+                asChild
+                size="default"
+                variant="default" 
+                className="whitespace-nowrap font-medium bg-blue-600 hover:bg-blue-700"
+              >
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <ExternalLink className="mr-2" size={18} />
+                  Schrijf je in
                 </a>
               </Button>
             </div>
