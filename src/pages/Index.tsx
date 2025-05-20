@@ -214,7 +214,7 @@ const Index = () => {
               >
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   <ExternalLink className="mr-2" size={18} />
-                  Schrijf je in
+                  Laat je email achter
                 </a>
               </Button>
             </div>
