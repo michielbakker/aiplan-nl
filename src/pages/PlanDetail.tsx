@@ -56,27 +56,27 @@ const PlanDetail = () => {
         
         {/* Feedback section */}
         <div className="mt-12 pt-6 border-t border-gray-200">
-          <div className="flex items-center gap-2 text-gray-600 mb-2">
+          <div className="flex items-center gap-2 text-gray-600">
             <MessageCircle size={20} />
             <span>Heb je feedback, suggesties of relevante links? </span>
-          </div>
-          <div className="ml-8 text-blue-600">
             <a 
               href="https://github.com/michielbakker/aiplan-nl"
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-blue-800 hover:underline block mb-2"
+              className="text-blue-600 hover:text-blue-800 hover:underline"
             >
-              Open een issue op GitHub.
+              Open een issue op GitHub
             </a>
+            <span className="mx-1">of</span>
             <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-blue-800 hover:underline block"
+              className="text-blue-600 hover:text-blue-800 hover:underline"
             >
-              Laat je email en idee achter.
+              laat je email en idee achter
             </a>
+            <span>.</span>
           </div>
         </div>
       </div>
