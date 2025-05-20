@@ -49,7 +49,7 @@ const PlanDetail = () => {
         </Link>
         
         <div className="prose max-w-none">
-          <ReactMarkdown>
+          <ReactMarkdown className="markdown-content">
             {content}
           </ReactMarkdown>
         </div>

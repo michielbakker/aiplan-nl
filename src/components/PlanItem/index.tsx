@@ -38,7 +38,7 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
       
       {isExpanded && (
         <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
-          <div className="prose max-w-none">
+          <div className="prose max-w-none markdown-content">
             <ReactMarkdown components={{
               // Skip any h3 headings that could be title duplicates
               h3: ({ node, ...props }) => {
@@ -78,7 +78,7 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
                     }
                   }
                 }
-                return <p {...props} />;
+                return <p {...props} className="mb-4" />;
               }
             }}>
               {content}
