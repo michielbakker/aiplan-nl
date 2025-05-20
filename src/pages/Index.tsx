@@ -28,20 +28,19 @@ const Index = () => {
     }
   };
 
-  // Plan items data - we'll let the PlanItem component extract titles automatically
-  const planItems = [
-    { number: 1, content: item1 },
-    { number: 2, content: item2 },
-    { number: 3, content: item3 },
-    { number: 4, content: item4 },
-    { number: 5, content: item5 },
-    { number: 6, content: item6 },
-    { number: 7, content: item7 },
-    { number: 8, content: item8 },
-    { number: 9, content: item9 },
-    { number: 10, content: item10 }
+  // Collect all imported items in an array
+  const itemContents = [
+    item1, item2, item3, item4, item5, 
+    item6, item7, item8, item9, item10
+    // When you add more items, just import them above and add them here
   ];
   
+  // Generate plan items dynamically based on the imported content
+  const planItems = itemContents.map((content, index) => ({
+    number: index + 1,
+    content
+  }));
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
