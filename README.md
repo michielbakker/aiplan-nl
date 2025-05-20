@@ -1,58 +1,83 @@
-# Welcome to your Lovable project
 
-## Project info
+# Welkom bij je Lovable project
+
+## Project informatie
 
 **URL**: https://lovable.dev/projects/8dc61c7e-8f7f-452d-9c6d-c7ec4aeb70d7
 
-## How can I edit this code?
+## Hoe kan ik items bewerken en links toevoegen?
 
-There are several ways of editing your application.
+### Items bewerken
 
-**Use Lovable**
+Om de planpunten in het Deltaplan voor AI Transitie te bewerken:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8dc61c7e-8f7f-452d-9c6d-c7ec4aeb70d7) and start prompting.
+1. Ga naar de map `plan-items` in de hoofddirectory
+2. Open het gewenste bestand (bijvoorbeeld `item-1.md`, `item-2.md`, etc.)
+3. Bewerk de inhoud in Markdown-formaat
+4. Sla het bestand op en de wijzigingen worden automatisch toegepast
 
-Changes made via Lovable will be committed automatically to this repo.
+### Links toevoegen
 
-**Use your preferred IDE**
+Je kunt links toevoegen aan de Markdown-bestanden met de volgende syntax:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```markdown
+[Link tekst](https://voorbeeld.nl)
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Bijvoorbeeld:
+```markdown
+Zie [onze website](https://voorbeeld.nl) voor meer informatie.
+```
 
-Follow these steps:
+## Hoe kan ik deze code bewerken?
+
+Er zijn verschillende manieren om je applicatie te bewerken:
+
+**Gebruik Lovable**
+
+Bezoek simpelweg het [Lovable Project](https://lovable.dev/projects/8dc61c7e-8f7f-452d-9c6d-c7ec4aeb70d7) en begin met het geven van instructies.
+
+Wijzigingen gemaakt via Lovable worden automatisch gecommit naar deze repo.
+
+**Gebruik je eigen IDE**
+
+Als je lokaal wilt werken met je eigen IDE, kun je deze repo klonen en wijzigingen pushen. Gepushte wijzigingen worden ook weergegeven in Lovable.
+
+De enige vereiste is het hebben van Node.js & npm - [installeer met nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Volg deze stappen:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Stap 1: Clone de repository met de Git URL van het project.
+git clone <JOUW_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Stap 2: Navigeer naar de projectdirectory.
+cd <JOUW_PROJECT_NAAM>
 
-# Step 3: Install the necessary dependencies.
+# Stap 3: Installeer de benodigde dependencies.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Stap 4: Start de ontwikkelingsserver met auto-reloading en een instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Bewerk een bestand direct in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Navigeer naar het gewenste bestand/bestanden.
+- Klik op de "Edit" knop (potlood-icoon) rechtsboven in de bestandsweergave.
+- Maak je wijzigingen en commit de veranderingen.
 
-**Use GitHub Codespaces**
+**Gebruik GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Navigeer naar de hoofdpagina van je repository.
+- Klik op de "Code" knop (groene knop) rechtsboven.
+- Selecteer het tabblad "Codespaces".
+- Klik op "New codespace" om een nieuwe Codespace-omgeving te starten.
+- Bewerk bestanden direct in de Codespace en commit en push je wijzigingen wanneer je klaar bent.
 
-## What technologies are used for this project?
+## Welke technologieën worden gebruikt voor dit project?
 
-This project is built with:
+Dit project is gebouwd met:
 
 - Vite
 - TypeScript
@@ -60,14 +85,14 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Hoe kan ik dit project deployen?
 
-Simply open [Lovable](https://lovable.dev/projects/8dc61c7e-8f7f-452d-9c6d-c7ec4aeb70d7) and click on Share -> Publish.
+Open simpelweg [Lovable](https://lovable.dev/projects/8dc61c7e-8f7f-452d-9c6d-c7ec4aeb70d7) en klik op Delen -> Publiceren.
 
-## Can I connect a custom domain to my Lovable project?
+## Kan ik een eigen domein verbinden met mijn Lovable project?
 
-Yes, you can!
+Ja, dat kan!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Om een domein te verbinden, navigeer naar Project > Instellingen > Domeinen en klik op Domein Verbinden.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Lees meer hier: [Een eigen domein instellen](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
