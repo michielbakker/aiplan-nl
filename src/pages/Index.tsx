@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -55,7 +56,7 @@ const Index = () => {
             <a href="https://x.com/bakkermichiel" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
               Michiel Bakker
             </a>
-            <span className="text-gray-400">|</span>
+            <span className="text-gray-400">en</span>
             <a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
               Jelle Prins
             </a>
@@ -169,7 +170,10 @@ const Index = () => {
         </section>
         
         <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
-          <p>Deltaplan voor AI Transitie &copy; {new Date().getFullYear()}</p>
+          <p className="mb-2">Deltaplan voor AI Transitie &copy; {new Date().getFullYear()}</p>
+          <p>
+            Schrijf zelf mee via <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">onze Github</a>
+          </p>
         </footer>
       </div>
     </div>
