@@ -27,7 +27,7 @@ const PlanItem: React.FC<PlanItemProps> = ({
         onClick={toggleExpand}
       >
         <div className="flex items-center">
-          <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-medium mr-3">
+          <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white font-medium mr-3">
             {number}
           </div>
           <h3 className="text-lg font-semibold">{title}</h3>
