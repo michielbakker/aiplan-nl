@@ -4,15 +4,7 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import ReactMarkdown from 'react-markdown';
 
-interface PlanItemProps {
-  number: number;
-  title: string;
-  content: string;
-  isExpanded: boolean;
-  toggleExpand: () => void;
-}
-
-const PlanItem = ({ number, title, content, isExpanded, toggleExpand }: PlanItemProps) => (
+const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => (
   <Card>
     <div 
       className="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50"
