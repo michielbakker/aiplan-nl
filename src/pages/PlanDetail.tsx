@@ -48,8 +48,8 @@ const PlanDetail = () => {
           </Button>
         </Link>
         
-        <div className="prose max-w-none">
-          <ReactMarkdown className="markdown-content">
+        <div className="prose max-w-none markdown-content">
+          <ReactMarkdown>
             {content}
           </ReactMarkdown>
         </div>
