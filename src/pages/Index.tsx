@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import PlanItem from '@/components/PlanItem';
+import { Button } from '@/components/ui/button';
+import { Github } from 'lucide-react';
 
 // Import all plan item markdown content
 import item1 from '../../plan-items/item-1.md?raw';
@@ -169,12 +171,32 @@ const Index = () => {
           </div>
         </section>
         
-        <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
+        {/* Prominent contribution box */}
+        <div className="my-12 rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
+          <div className="p-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-3">Schrijf zelf mee via onze Github</h3>
+                <p className="font-medium">Denk mee over het Deltaplan voor AI en draag bij aan deze belangrijke discussie.</p>
+              </div>
+              <Button 
+                asChild
+                size="lg"
+                variant="secondary" 
+                className="whitespace-nowrap bg-white text-indigo-700 hover:bg-gray-100 font-semibold"
+              >
+                <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <Github className="mr-2" size={20} />
+                  Naar Github
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        <footer className="text-center text-sm text-gray-500 mt-6 pt-8 border-t border-gray-200">
           <p className="mb-2">
             Met dank aan Durk Kingma, Peter van Sabbben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji en Sebastiaan Vaessen
-          </p>
-          <p>
-            Schrijf zelf mee via <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">onze Github</a>
           </p>
         </footer>
       </div>
