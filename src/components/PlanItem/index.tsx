@@ -40,17 +40,44 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
         <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
           <div className="prose max-w-none">
             <ReactMarkdown components={{
-              // Skip all h3 headings since they would be duplicates of the card title
+              // Skip any h3 headings that could be title duplicates
               h3: ({ node, ...props }) => {
-                // Check if this is a title heading (usually has ** markers)
-                const content = node.children?.[0]?.type === 'text' 
-                  ? (node.children[0] as { value: string }).value 
-                  : '';
-                
-                if (content.includes('**')) {
-                  return null; // Don't render title headings
+                // If we have children, check their content
+                if (node.children && node.children.length > 0) {
+                  const firstChild = node.children[0];
+                  
+                  // Handle text nodes (checking for ** which indicates title format)
+                  if (firstChild.type === 'text') {
+                    const textContent = (firstChild as { value: string }).value;
+                    if (textContent.includes('**')) {
+                      return null; // Skip this heading - it's a title
+                    }
+                  }
+                  
+                  // Check for strong/bold nodes which would also indicate a title
+                  if (firstChild.type === 'strong') {
+                    return null; // Skip this heading - it likely contains the title
+                  }
                 }
+                
                 return <h3 {...props} />;
+              },
+              // Also handle any potential numbered prefixes in paragraphs
+              p: ({ node, ...props }) => {
+                if (node.children && node.children.length > 0) {
+                  // Check if this paragraph starts with a numbered prefix like "5. Europese rekenkracht"
+                  const firstChild = node.children[0];
+                  if (firstChild.type === 'text') {
+                    const textContent = (firstChild as { value: string }).value;
+                    if (textContent.match(/^\d+\.\s+/)) {
+                      // If this contains a title-like format, don't render it
+                      if (textContent.includes(extractedTitle)) {
+                        return null;
+                      }
+                    }
+                  }
+                }
+                return <p {...props} />;
               }
             }}>
               {content}
