@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import PlanItem from '@/components/PlanItem';
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+import { Github } from 'lucide-react';
 
 // Import all plan item markdown content
 import item1 from '../../plan-items/item-1.md?raw';
@@ -169,6 +171,46 @@ const Index = () => {
           </div>
         </section>
         
+        {/* Highlighted contribution section */}
+        <div className="mb-12 rounded-xl overflow-hidden shadow-lg bg-gradient-to-r from-indigo-50 to-purple-50 border border-purple-100">
+          <div className="p-6">
+            <div className="flex items-center justify-center mb-4">
+              <Github className="h-8 w-8 text-purple-700 mr-2" />
+              <h2 className="text-2xl font-bold text-purple-800">Denk mee over het Deltaplan</h2>
+            </div>
+            <div className="prose max-w-none text-purple-900">
+              <p className="text-center font-medium mb-4">
+                Iedereen kan meedoen — alle input wordt serieus genomen.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4 mb-4">
+                <div className="bg-white bg-opacity-60 rounded-lg p-4 shadow-sm">
+                  <h3 className="font-semibold text-purple-800 mb-2">Geef feedback of doe een voorstel</h3>
+                  <p className="text-sm">
+                    Open een <a href="https://github.com/michielbakker/aiplan-nl/issues" className="text-purple-600 font-medium hover:underline">GitHub Issue</a> en schrijf een korte titel met duidelijke toelichting.
+                  </p>
+                </div>
+                <div className="bg-white bg-opacity-60 rounded-lg p-4 shadow-sm">
+                  <h3 className="font-semibold text-purple-800 mb-2">Reageer op voorstellen</h3>
+                  <p className="text-sm">
+                    Voeg een comment toe of geef een emoji-reactie: 👍 (upvote), 👎 (downvote), 👀 (volgen), ❤️ / 🎉 (steun)
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <a 
+                  href="https://github.com/michielbakker/aiplan-nl" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors"
+                >
+                  <Github className="mr-2 h-5 w-5" />
+                  Schrijf mee op GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
           <p className="mb-2">
             Met dank aan Durk Kingma, Peter van Sabbben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji en Sebastiaan Vaessen
@@ -183,3 +225,4 @@ const Index = () => {
 };
 
 export default Index;
+
