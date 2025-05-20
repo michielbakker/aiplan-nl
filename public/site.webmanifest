@@ -1,0 +1,20 @@
+
+{
+  "name":"AI Plan NL",
+  "short_name":"AI Plan NL",
+  "icons":[
+    {
+      "src":"/lovable-uploads/63dbb158-a425-48ee-913c-7d9d8452ce09.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    },
+    {
+      "src":"/lovable-uploads/a53af609-44e1-4571-9aa2-96e85b194c70.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    }
+  ],
+  "theme_color":"#ffffff",
+  "background_color":"#ffffff",
+  "display":"standalone"
+}
