@@ -1,6 +1,7 @@
 # Denk mee over het Deltaplan voor AI
 
 📍 **Bekijk het plan**: [aiplan.nl](https://aiplan.nl)
+
 💬 **Geef feedback of doe een voorstel**: [GitHub Issues](https://github.com/michielbakker/aiplan-nl/issues)
 
 ## Hoe geef ik feedback of stel ik iets voor?
