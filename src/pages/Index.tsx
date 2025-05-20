@@ -1,19 +1,20 @@
+
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import PlanItem from '@/components/PlanItem';
 
 // Import all plan item markdown content
-import item1 from '@/content/plan-items/item-1.md?raw';
-import item2 from '@/content/plan-items/item-2.md?raw';
-import item3 from '@/content/plan-items/item-3.md?raw';
-import item4 from '@/content/plan-items/item-4.md?raw';
-import item5 from '@/content/plan-items/item-5.md?raw';
-import item6 from '@/content/plan-items/item-6.md?raw';
-import item7 from '@/content/plan-items/item-7.md?raw';
-import item8 from '@/content/plan-items/item-8.md?raw';
-import item9 from '@/content/plan-items/item-9.md?raw';
-import item10 from '@/content/plan-items/item-10.md?raw';
+import item1 from '../../plan-items/item-1.md?raw';
+import item2 from '../../plan-items/item-2.md?raw';
+import item3 from '../../plan-items/item-3.md?raw';
+import item4 from '../../plan-items/item-4.md?raw';
+import item5 from '../../plan-items/item-5.md?raw';
+import item6 from '../../plan-items/item-6.md?raw';
+import item7 from '../../plan-items/item-7.md?raw';
+import item8 from '../../plan-items/item-8.md?raw';
+import item9 from '../../plan-items/item-9.md?raw';
+import item10 from '../../plan-items/item-10.md?raw';
 
 const Index = () => {
   // State for the expanded plan item
