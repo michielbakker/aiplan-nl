@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -29,58 +28,18 @@ const Index = () => {
     }
   };
 
-  // Plan items data
+  // Plan items data - we'll let the PlanItem component extract titles automatically
   const planItems = [
-    {
-      number: 1,
-      title: "AI soevereiniteit",
-      content: item1
-    },
-    {
-      number: 2,
-      title: "Talent",
-      content: item2
-    },
-    {
-      number: 3,
-      title: "Een Nederlandse AI hub",
-      content: item3
-    },
-    {
-      number: 4,
-      title: "Strategische investeringen",
-      content: item4
-    },
-    {
-      number: 5,
-      title: "Europese rekenkracht",
-      content: item5
-    },
-    {
-      number: 6,
-      title: "Defensie als vliegwiel",
-      content: item6
-    },
-    {
-      number: 7,
-      title: "Sectorspecifieke AI-plannen",
-      content: item7
-    },
-    {
-      number: 8,
-      title: "Maak Nederland AI-vaardig",
-      content: item8
-    },
-    {
-      number: 9,
-      title: "Onderzoek naar AI-impact",
-      content: item9
-    },
-    {
-      number: 10,
-      title: "Online veiligheid",
-      content: item10
-    }
+    { number: 1, content: item1 },
+    { number: 2, content: item2 },
+    { number: 3, content: item3 },
+    { number: 4, content: item4 },
+    { number: 5, content: item5 },
+    { number: 6, content: item6 },
+    { number: 7, content: item7 },
+    { number: 8, content: item8 },
+    { number: 9, content: item9 },
+    { number: 10, content: item10 }
   ];
   
   return (
@@ -171,7 +130,7 @@ const Index = () => {
               <PlanItem
                 key={item.number}
                 number={item.number}
-                title={item.title}
+                title="" // We'll let the component extract the title
                 content={item.content}
                 isExpanded={expandedItem === item.number}
                 toggleExpand={() => toggleItem(item.number)}
