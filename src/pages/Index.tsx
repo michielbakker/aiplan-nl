@@ -1,44 +1,44 @@
+
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import PlanItem from '@/components/PlanItem';
 import { Button } from '@/components/ui/button';
 import { Github } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
-// Import all plan item markdown content
-import item1 from '../../plan-items/item-1.md?raw';
-import item2 from '../../plan-items/item-2.md?raw';
-import item3 from '../../plan-items/item-3.md?raw';
-import item4 from '../../plan-items/item-4.md?raw';
-import item5 from '../../plan-items/item-5.md?raw';
-import item6 from '../../plan-items/item-6.md?raw';
-import item7 from '../../plan-items/item-7.md?raw';
-import item8 from '../../plan-items/item-8.md?raw';
-import item9 from '../../plan-items/item-9.md?raw';
-import item10 from '../../plan-items/item-10.md?raw';
+// Import all plan item short markdown content
+import item1Short from '../../plan-items/item-1-short.md?raw';
+import item2Short from '../../plan-items/item-2-short.md?raw';
+import item3Short from '../../plan-items/item-3-short.md?raw';
+import item4Short from '../../plan-items/item-4-short.md?raw';
+import item5Short from '../../plan-items/item-5-short.md?raw';
+import item6Short from '../../plan-items/item-6-short.md?raw';
+import item7Short from '../../plan-items/item-7-short.md?raw';
+import item8Short from '../../plan-items/item-8-short.md?raw';
+import item9Short from '../../plan-items/item-9-short.md?raw';
+import item10Short from '../../plan-items/item-10-short.md?raw';
+
+const extractTitleFromMarkdown = (markdown: string) => {
+  // Look for a title in the format ### **Title**
+  const titleMatch = markdown.match(/###\s+\*\*([^*]+)\*\*/);
+  if (titleMatch && titleMatch[1]) {
+    // Remove the numbered prefix (e.g., "1. ") if it exists
+    const title = titleMatch[1].trim();
+    return title.replace(/^\d+\.\s+/, '');
+  }
+  return null;
+};
 
 const Index = () => {
-  // State for the expanded plan item
-  const [expandedItem, setExpandedItem] = useState<number | null>(null);
-  
-  // Toggle function for expanding/collapsing plan items
-  const toggleItem = (itemNumber: number) => {
-    if (expandedItem === itemNumber) {
-      setExpandedItem(null);
-    } else {
-      setExpandedItem(itemNumber);
-    }
-  };
-
   // Collect all imported items in an array
-  const itemContents = [
-    item1, item2, item3, item4, item5, 
-    item6, item7, item8, item9, item10
-    // When you add more items, just import them above and add them here
+  const itemShortContents = [
+    item1Short, item2Short, item3Short, item4Short, item5Short, 
+    item6Short, item7Short, item8Short, item9Short, item10Short
   ];
   
   // Generate plan items dynamically based on the imported content
-  const planItems = itemContents.map((content, index) => ({
+  const planItems = itemShortContents.map((content, index) => ({
     number: index + 1,
     content
   }));
@@ -69,8 +69,10 @@ const Index = () => {
           <div className="prose max-w-none text-gray-700">
             <p>
               Heel lang was de gedachte dat alleen mensen écht intelligent kunnen zijn. Maar met voldoende rekenkracht en de juiste algoritmes kunnen computers straks alles wat mensen kunnen – en waarschijnlijk veel meer. Dit is geen sciencefiction. Deze technologische ontwikkeling is ingrijpender dan de komst van de smartphone of het internet. AI (artificial intelligence ofwel kunstmatige intelligentie) wordt razendsnel slimmer, dankzij enorme investeringen en supercomputers.
+            </p>
             <p className="mt-4">
-              AI zal de komende jaren de geopolitieke en militaire machtsbalans laten kantelen naar de naties die deze technologie beheersen. Amerika en China investeren daarom massaal in talent, startups en datacenters. Zelfs de Emiraten hebben een minister voor AI en zetten vol in op het bouwen van zogeheten ‘soevereine AI’. Nederland kijkt toe, terwijl anderen bepalen hoe de toekomst eruitziet.
+              AI zal de komende jaren de geopolitieke en militaire machtsbalans laten kantelen naar de naties die deze technologie beheersen. Amerika en China investeren daarom massaal in talent, startups en datacenters. Zelfs de Emiraten hebben een minister voor AI en zetten vol in op het bouwen van zogeheten 'soevereine AI'. Nederland kijkt toe, terwijl anderen bepalen hoe de toekomst eruitziet.
+            </p>
           </div>
         </section>
         
@@ -128,7 +130,8 @@ const Index = () => {
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Een nieuw Deltaplan voor AI</h2>
           <div className="prose max-w-none text-gray-700">
             <p>
-              In de twintigste eeuw bouwde Nederland de Deltawerken om ons land te beschermen tegen het water. Geen luxeproject, maar een daad van zelfbescherming – visionair, collectief en onmisbaar. Vandaag staan we opnieuw voor een existentiële dreiging. Niet van water, maar van digitale afhankelijkheid. AI wordt de fundering van economie, defensie, zorg, onderwijs en alles wat onze samenleving draaiende houdt. Als we die systemen niet zelf bouwen en begrijpen, raken we de regie over onze toekomst kwijt.            </p>
+              In de twintigste eeuw bouwde Nederland de Deltawerken om ons land te beschermen tegen het water. Geen luxeproject, maar een daad van zelfbescherming – visionair, collectief en onmisbaar. Vandaag staan we opnieuw voor een existentiële dreiging. Niet van water, maar van digitale afhankelijkheid. AI wordt de fundering van economie, defensie, zorg, onderwijs en alles wat onze samenleving draaiende houdt. Als we die systemen niet zelf bouwen en begrijpen, raken we de regie over onze toekomst kwijt.
+            </p>
             <p className="mt-4">
               Om deze uitdaging het hoofd te bieden, presenteren wij een eerste aanzet voor een nationaal AI Deltaplan, bedoeld om de discussie te voeden en tot actie aan te zetten:
             </p>
@@ -136,14 +139,24 @@ const Index = () => {
           
           <div className="mt-8 space-y-4">
             {planItems.map((item) => (
-              <PlanItem
-                key={item.number}
-                number={item.number}
-                title="" // We'll let the component extract the title
-                content={item.content}
-                isExpanded={expandedItem === item.number}
-                toggleExpand={() => toggleItem(item.number)}
-              />
+              <Card key={item.number} className="overflow-hidden">
+                <Link to={`/plan/${item.number}`} className="block p-4 hover:bg-gray-50">
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white mr-3 shrink-0">
+                      {item.number}
+                    </div>
+                    <div className="prose max-w-none">
+                      <ReactMarkdown components={{
+                        h3: ({ node, ...props }) => {
+                          return <h3 className="text-lg font-semibold" {...props} />;
+                        },
+                      }}>
+                        {item.content}
+                      </ReactMarkdown>
+                    </div>
+                  </div>
+                </Link>
+              </Card>
             ))}
           </div>
         </section>
