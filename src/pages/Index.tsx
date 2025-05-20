@@ -223,7 +223,7 @@ const Index = () => {
         
         <footer className="text-center text-sm text-gray-500 mt-6 pt-8 border-t border-gray-200">
           <p className="mb-2">
-            Met dank aan Durk Kingma, Peter van Sabbben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji en Sebastiaan Vaessen
+            Met dank aan Durk Kingma, Miles Brundage, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen en Teddy Collins
           </p>
         </footer>
       </div>
