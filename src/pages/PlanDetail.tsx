@@ -59,7 +59,7 @@ const PlanDetail = () => {
           <div className="flex items-center gap-2 text-gray-600">
   <MessageCircle size={20} />
   <span className="whitespace-nowrap">
-    <span>Heb je feedback, suggesties of relevante links?</span>
+    <span>Heb je feedback, suggesties of relevante links? </span>
     <a 
       href="https://github.com/michielbakker/aiplan-nl"
       target="_blank" 
