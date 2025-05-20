@@ -13,7 +13,7 @@ interface PlanItemsListProps {
 
 const PlanItemsList: React.FC<PlanItemsListProps> = ({ planItems }) => {
   return (
-    <div className="mt-8 space-y-4">
+    <div className="mt-8 mb-16 space-y-4">
       {planItems.map((item) => (
         <Card key={item.number} className="overflow-hidden">
           <Link to={`/plan/${item.number}`} className="block p-4 hover:bg-gray-50">

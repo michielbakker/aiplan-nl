@@ -57,7 +57,9 @@ const Index = () => {
         <DeltaPlanIntro />
         <PlanItemsList planItems={planItems} />
         
-        <IntroSection title="Een Nederlandse AI top" />
+        <div className="my-20">
+          <IntroSection title="Een Nederlandse AI top" />
+        </div>
         
         <ContributionCTA />
         <NewsletterCTA />
