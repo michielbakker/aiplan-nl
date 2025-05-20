@@ -1,4 +1,4 @@
 
-### **8. Maak Nederland AI-vaardig**
+### **Maak Nederland AI-vaardig**
 
-Start een nationale campagne om Nederland AI-vaardig te maken, met aandacht voor zowel kansen als risico's van AI. Bedrijven moeten AI-gebruik actief stimuleren en via praktijkgerichte trainingen zorgen dat we, zelfs als we AI niet bouwen, de beste worden in de toepassing ervan.
+Start een nationale campagne om Nederland AI-vaardig te maken, met oog voor zowel de kansen als de risico's. Stimuleer actief het gebruik van AI in bedrijven en investeer in praktijkgerichte trainingen, zodat we – ook als we niet de beste AI bouwen – wél uitblinken in de toepassing ervan.
