@@ -4,39 +4,26 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, MessageCircle } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
-// Import all detail markdown content
-import item1Detail from '../../plan-items/item-1-detail.md?raw';
-import item2Detail from '../../plan-items/item-2-detail.md?raw';
-import item3Detail from '../../plan-items/item-3-detail.md?raw';
-import item4Detail from '../../plan-items/item-4-detail.md?raw';
-import item5Detail from '../../plan-items/item-5-detail.md?raw';
-import item6Detail from '../../plan-items/item-6-detail.md?raw';
-import item7Detail from '../../plan-items/item-7-detail.md?raw';
-import item8Detail from '../../plan-items/item-8-detail.md?raw';
-import item9Detail from '../../plan-items/item-9-detail.md?raw';
-import item10Detail from '../../plan-items/item-10-detail.md?raw';
+const detailsNlObj = import.meta.glob('../../plan-items/nl/item-*-detail.md', { eager: true, as: 'raw' });
+const detailsEnObj = import.meta.glob('../../plan-items/en/item-*-detail.md', { eager: true, as: 'raw' });
+
+const sortDetails = (obj: Record<string, string>) =>
+  Object.entries(obj)
+    .sort((a, b) => parseInt(a[0].match(/item-(\d+)-/)! [1]) - parseInt(b[0].match(/item-(\d+)-/)! [1]))
+    .map(([, content]) => content);
+
+const detailsNl = sortDetails(detailsNlObj);
+const detailsEn = sortDetails(detailsEnObj);
 
 const PlanDetail = () => {
   const { id } = useParams<{ id: string }>();
   const itemNumber = parseInt(id || '1');
   
-  // Map of item details
-  const itemDetails = {
-    1: item1Detail,
-    2: item2Detail,
-    3: item3Detail,
-    4: item4Detail,
-    5: item5Detail,
-    6: item6Detail,
-    7: item7Detail,
-    8: item8Detail,
-    9: item9Detail,
-    10: item10Detail,
-  };
-  
-  // Get the content for this item
-  const content = itemDetails[itemNumber as keyof typeof itemDetails] || '';
+  const { language } = useLanguage();
+  const details = language === 'en' ? detailsEn : detailsNl;
+  const content = details[itemNumber - 1] || '';
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -44,7 +31,7 @@ const PlanDetail = () => {
         <Link to="/" className="inline-block mb-6">
           <Button variant="ghost" className="flex items-center gap-2">
             <ChevronLeft size={16} />
-            <span>Terug naar overzicht</span>
+            <span>{language === 'nl' ? 'Terug naar overzicht' : 'Back to overview'}</span>
           </Button>
         </Link>
         
@@ -59,23 +46,23 @@ const PlanDetail = () => {
           <div className="flex items-center gap-2 text-gray-600">
   <MessageCircle size={20} />
   <span className="whitespace-nowrap">
-    <span>Heb je feedback, suggesties of relevante links? </span>
-    <a 
+    <span>{language === 'nl' ? 'Heb je feedback, suggesties of relevante links? ' : 'Have feedback, suggestions or relevant links? '}</span>
+    <a
       href="https://github.com/michielbakker/aiplan-nl"
-      target="_blank" 
+      target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:text-blue-800 hover:underline"
     >
-      Open een issue op GitHub
+      {language === 'nl' ? 'Open een issue op GitHub' : 'Open an issue on GitHub'}
     </a>
-    <span> of </span>
-    <a 
+    <span>{language === 'nl' ? ' of ' : ' or '}</span>
+    <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
-      target="_blank" 
+      target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 hover:text-blue-800 hover:underline"
     >
-      laat je email en idee achter.
+      {language === 'nl' ? 'laat je email en idee achter.' : 'leave your email and idea.'}
     </a>
   </span>
 </div>
