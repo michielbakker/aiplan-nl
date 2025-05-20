@@ -68,7 +68,7 @@ const Index = () => {
     },
     {
       number: 8,
-      title: "Maak Nederland AI vaardig",
+      title: "Maak Nederland AI-vaardig",
       content: item8
     },
     {
