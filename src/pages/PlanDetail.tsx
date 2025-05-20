@@ -57,26 +57,28 @@ const PlanDetail = () => {
         {/* Feedback section */}
         <div className="mt-12 pt-6 border-t border-gray-200">
           <div className="flex items-center gap-2 text-gray-600">
-            <MessageCircle size={20} />
-            <span>Heb je feedback, suggesties of relevante links? </span>
-            <a 
-              href="https://github.com/michielbakker/aiplan-nl"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 hover:underline"
-            >
-              Open een issue op GitHub
-            </a>
-            <span> of </span>
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 hover:underline"
-            >
-              laat je email en idee achter.
-            </a>
-          </div>
+  <MessageCircle size={20} />
+  <span>Heb je feedback, suggesties of relevante links?</span>
+  <span className="whitespace-nowrap">
+    <a 
+      href="https://github.com/michielbakker/aiplan-nl"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline"
+    >
+      Open een issue op GitHub
+    </a>
+    <span> of </span>
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline"
+    >
+      laat je email en idee achter.
+    </a>
+  </span>
+</div>
         </div>
       </div>
     </div>
