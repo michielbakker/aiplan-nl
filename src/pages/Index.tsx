@@ -1,8 +1,9 @@
-
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import PlanItem from '@/components/PlanItem';
+import { Button } from '@/components/ui/button';
+import { Github } from 'lucide-react';
 
 // Import all plan item markdown content
 import item1 from '../../plan-items/item-1.md?raw';
@@ -169,12 +170,35 @@ const Index = () => {
           </div>
         </section>
         
-        <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
+        {/* Prominent GitHub contribution box */}
+        <div className="my-16 rounded-lg overflow-hidden shadow-lg">
+          <div className="bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] p-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="text-white flex-1">
+                <h3 className="text-2xl font-bold mb-3">Denk en schrijf mee!</h3>
+                <p className="mb-4 text-lg">
+                  Het AI-Deltaplan wordt doorlopend verbeterd. Jouw expertise is waardevol - laat je stem horen en draag bij aan de toekomst van AI in Nederland.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <Button 
+                  asChild 
+                  size="lg"
+                  className="bg-white text-[#6E59A5] hover:bg-gray-100 font-bold text-lg px-6 py-3 flex items-center gap-2 transition-transform hover:scale-105"
+                >
+                  <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-6 w-6" />
+                    Schrijf mee via GitHub
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <footer className="text-center text-sm text-gray-500 mt-8 pt-8 border-t border-gray-200">
           <p className="mb-2">
             Met dank aan Durk Kingma, Peter van Sabbben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji en Sebastiaan Vaessen
-          </p>
-          <p>
-            Schrijf zelf mee via <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">onze Github</a>
           </p>
         </footer>
       </div>
