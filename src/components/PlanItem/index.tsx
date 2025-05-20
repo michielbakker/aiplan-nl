@@ -55,7 +55,8 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
                   }
                   
                   // Check for strong/bold nodes which would also indicate a title
-                  if (firstChild.type === 'strong') {
+                  // We need to check if it's an element type with tagName 'strong'
+                  if (firstChild.type === 'element' && 'tagName' in firstChild && firstChild.tagName === 'strong') {
                     return null; // Skip this heading - it likely contains the title
                   }
                 }
