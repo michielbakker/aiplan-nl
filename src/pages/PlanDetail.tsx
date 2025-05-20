@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, MessageCircle } from 'lucide-react';
 
 // Import all detail markdown content
 import item1Detail from '../../plan-items/item-1-detail.md?raw';
@@ -52,6 +52,22 @@ const PlanDetail = () => {
           <ReactMarkdown>
             {content}
           </ReactMarkdown>
+        </div>
+        
+        {/* Feedback section */}
+        <div className="mt-12 pt-6 border-t border-gray-200">
+          <div className="flex items-center gap-2 text-gray-600">
+            <MessageCircle size={20} />
+            <span>Heb je feedback, suggesties of relevante links? </span>
+            <a 
+              href="https://github.com/michielbakker/aiplan-nl"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 hover:underline"
+            >
+              Open een issue op GitHub.
+            </a>
+          </div>
         </div>
       </div>
     </div>
