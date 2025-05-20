@@ -65,18 +65,8 @@ const PlanDetail = () => {
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 hover:underline"
             >
-              Open een issue op GitHub
+              Open een issue op GitHub.
             </a>
-            <span className="mx-1">of</span>
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 hover:underline"
-            >
-              laat je email en idee achter
-            </a>
-            <span>.</span>
           </div>
         </div>
       </div>
