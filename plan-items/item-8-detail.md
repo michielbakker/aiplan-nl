@@ -1,6 +1,6 @@
 
 ### **8. Maak Nederland AI-vaardig**
 
-Start een nationale campagne om Nederland AI-vaardig te maken, met aandacht voor zowel kansen als risico's van AI. Bedrijven moeten AI-gebruik actief stimuleren en via praktijkgerichte trainingen zorgen dat we, zelfs als we AI niet bouwen, de beste worden in de toepassing ervan.
+AI-geletterdheid is essentieel voor iedereen, niet alleen voor specialisten. Van scholieren tot senioren, iedereen dient te begrijpen wat AI inhoudt, hoe het functioneert, en hoe ermee gewerkt kan worden. Dit vraagt om investeringen in onderwijs op alle niveaus en doorlopende bijscholing voor de werkende bevolking.
 
-AI-geletterdheid is niet alleen belangrijk voor specialisten, maar voor iedereen. Van schoolkinderen tot pensioengerechtigden, iedereen moet begrijpen wat AI is, hoe het werkt, en hoe ze ermee kunnen werken. Dit vergt investeringen in onderwijs op alle niveaus en continue bijscholing voor de beroepsbevolking.
+Lanceer daarom een landelijke campagne om Nederland AI-vaardig te maken, waarbij zowel de mogelijkheden als de risico's van AI worden belicht. Organiseer 'hackathons' waar mensen, ondersteund door deskundigen, leren AI toe te passen in hun werkzaamheden. Maak AI-training verplicht voor ambtenaren, en stimuleer bedrijven om het gebruik van AI actief te bevorderen. Ook als we AI niet zelf ontwikkelen, moeten we uitblinken in de toepassing ervan.
