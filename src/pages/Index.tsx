@@ -52,7 +52,7 @@ const Index = () => {
           <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">
             Een Deltaplan voor de AI Transitie
           </h2>
-          <div className="flex justify-center items-center space-x-6 text-gray-600">
+          <div className="flex justify-center items-center space-x-2 text-gray-600">
             <a href="https://x.com/bakkermichiel" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
               Michiel Bakker
             </a>
@@ -170,7 +170,7 @@ const Index = () => {
         </section>
         
         <footer className="text-center text-sm text-gray-500 mt-16 pt-8 border-t border-gray-200">
-          <p className="mb-2">Deltaplan voor AI Transitie &copy; {new Date().getFullYear()}</p>
+          <p className="mb-2">Deltaplan voor AI Transitie {new Date().getFullYear()}</p>
           <p>
             Schrijf zelf mee via <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">onze Github</a>
           </p>
