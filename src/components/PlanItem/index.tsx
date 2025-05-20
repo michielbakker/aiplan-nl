@@ -40,12 +40,12 @@ const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
         <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
           <div className="prose max-w-none">
             <ReactMarkdown components={{
-              // Skip the first h3 heading since we already show it in the card header
+              // Skip all h3 headings since they would be duplicates of the card title
               h3: ({ node, ...props }) => {
-                // Check if this is the first h3 in the document
-                const isFirstH3 = node.position?.start.line === 1;
-                if (isFirstH3) {
-                  return null; // Don't render the first h3
+                // Check if this is a title heading (usually has ** markers)
+                const content = node.children?.[0]?.value || '';
+                if (content.includes('**')) {
+                  return null; // Don't render title headings
                 }
                 return <h3 {...props} />;
               }
