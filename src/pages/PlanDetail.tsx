@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
@@ -37,6 +37,35 @@ const PlanDetail = () => {
   
   // Get the content for this item
   const content = itemDetails[itemNumber as keyof typeof itemDetails] || '';
+  
+  // Extract title from markdown content
+  const extractedTitle = useMemo(() => {
+    const titleMatch = content.match(/###\s+\*\*([^*]+)\*\*/);
+    if (titleMatch && titleMatch[1]) {
+      const title = titleMatch[1].trim();
+      return title.replace(/^\d+\.\s+/, '');
+    }
+    return `Item ${itemNumber}`;
+  }, [content, itemNumber]);
+
+  // Extract content without the title
+  const extractedContent = useMemo(() => {
+    const lines = content.split('\n');
+    const contentLines = [];
+    let foundTitle = false;
+    
+    for (const line of lines) {
+      if (line.match(/###\s+\*\*([^*]+)\*\*/)) {
+        foundTitle = true;
+        continue;
+      }
+      if (foundTitle && line.trim()) {
+        contentLines.push(line);
+      }
+    }
+    
+    return contentLines.join('\n').trim();
+  }, [content]);
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
@@ -48,16 +77,21 @@ const PlanDetail = () => {
           </Button>
         </Link>
         
-        <div className="bg-gray-50 px-16 py-8 max-md:px-12">
-          <div className="prose max-w-none markdown-content">
-            <ReactMarkdown>
-              {content}
-            </ReactMarkdown>
+        <div className="px-16 py-8 max-md:px-12" style={{ backgroundColor: '#101E59' }}>
+          <div className="text-white">
+            <h1 className="text-4xl md:text-5xl font-space-grotesk font-medium text-white mb-8">
+              {itemNumber}. {extractedTitle}
+            </h1>
+            <div className="prose max-w-none markdown-content text-white font-inter">
+              <ReactMarkdown>
+                {extractedContent}
+              </ReactMarkdown>
+            </div>
           </div>
         </div>
         
         {/* Feedback section */}
-        <div className="mt-12 pt-8 border-t border-gray-200 px-12 max-md:px-8">
+        <div className="mt-12 pt-8 border-t border-gray-200 px-16 max-md:px-12">
           <div className="flex items-start gap-2 text-gray-600">
             <MessageCircle size={20} className="flex-shrink-0 mt-0.5" />
             <div className="flex-1">

@@ -160,6 +160,31 @@
   margin-bottom: 1.5em;
 }
 
+/* White text markdown styling for dark backgrounds */
+.text-white .markdown-content p,
+.text-white .markdown-content h1,
+.text-white .markdown-content h2,
+.text-white .markdown-content h3,
+.text-white .markdown-content h4,
+.text-white .markdown-content h5,
+.text-white .markdown-content h6,
+.text-white .markdown-content li,
+.text-white .markdown-content span,
+.text-white .markdown-content strong,
+.text-white .markdown-content em {
+  color: white !important;
+}
+
+.text-white .markdown-content a {
+  color: #93c5fd !important;
+  text-decoration: underline;
+}
+
+.text-white .markdown-content blockquote {
+  border-left: 4px solid #ffffff;
+  color: white !important;
+}
+
 /* Add more space between sections */
 section + section {
   margin-top: 3rem;
