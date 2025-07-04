@@ -39,46 +39,48 @@ const PlanDetail = () => {
   const content = itemDetails[itemNumber as keyof typeof itemDetails] || '';
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <Link to="/" className="inline-block mb-6">
-          <Button variant="ghost" className="flex items-center gap-2">
+    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <Link to="/" className="inline-block mb-8">
+          <Button variant="ghost" className="flex items-center gap-2 text-gray-600 hover:text-gray-800">
             <ChevronLeft size={16} />
             <span>Terug naar overzicht</span>
           </Button>
         </Link>
         
-        <div className="prose max-w-none markdown-content">
-          <ReactMarkdown>
-            {content}
-          </ReactMarkdown>
+        <div className="bg-gray-50 px-12 py-12 max-md:px-8">
+          <div className="prose max-w-none markdown-content">
+            <ReactMarkdown>
+              {content}
+            </ReactMarkdown>
+          </div>
         </div>
         
         {/* Feedback section */}
-        <div className="mt-12 pt-6 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-gray-200 px-12 max-md:px-8">
           <div className="flex items-center gap-2 text-gray-600">
-  <MessageCircle size={20} />
-  <span className="whitespace-nowrap">
-    <span>Heb je feedback, suggesties of relevante links? </span>
-    <a 
-      href="https://github.com/michielbakker/aiplan-nl"
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:text-blue-800 hover:underline"
-    >
-      Open een issue op GitHub
-    </a>
-    <span> of </span>
-    <a 
-      href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:text-blue-800 hover:underline"
-    >
-      laat je email en idee achter.
-    </a>
-  </span>
-</div>
+            <MessageCircle size={20} />
+            <span className="whitespace-nowrap">
+              <span>Heb je feedback, suggesties of relevante links? </span>
+              <a 
+                href="https://github.com/michielbakker/aiplan-nl"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Open een issue op GitHub
+              </a>
+              <span> of </span>
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                laat je email en idee achter.
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
