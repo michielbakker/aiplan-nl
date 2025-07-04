@@ -74,16 +74,20 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <div className="flex justify-center">
           <Button
             asChild
-            variant="outline"
-            size="sm"
-            className="text-[#554664] border-[#554664] hover:bg-[#f6f7f9] hover:text-[#2a2134] hover:border-[#2a2134] font-inter text-sm transition-all duration-200 shadow-sm pl-4"
+            className="gap-0 pl-4 pr-4 rounded-none text-white bg-[#554664] hover:bg-[#443552] transition-colors duration-200 font-inter text-sm"
           >
             <a 
               href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" 
               target="_blank" 
               rel="noopener noreferrer"
+              className="flex items-center gap-2"
             >
-              🇬🇧 English
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2"/>
+                <path d="M2 12h20" stroke="white" strokeWidth="2"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="white" strokeWidth="2"/>
+              </svg>
+              English
             </a>
           </Button>
         </div>

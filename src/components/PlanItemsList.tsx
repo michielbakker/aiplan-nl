@@ -9,6 +9,22 @@ interface PlanItemsListProps {
   }[];
 }
 
+interface ColorScheme {
+  backgroundColor: string;
+  buttonBgColor: string;
+}
+
+const COLOR_SCHEMES: ColorScheme[] = [
+  {
+    backgroundColor: '#C9BDA9',
+    buttonBgColor: '#594F3F',
+  },
+  {
+    backgroundColor: 'white',
+    buttonBgColor: '#1B0025',
+  }
+];
+
 const PlanItemsList: React.FC<PlanItemsListProps> = ({ planItems }) => {
   return (
     <div className="flex flex-col items-center">
@@ -17,7 +33,7 @@ const PlanItemsList: React.FC<PlanItemsListProps> = ({ planItems }) => {
           key={item.number} 
           number={item.number} 
           content={item.content}
-          backgroundColor={index % 2 === 0 ? '#EDE9F4' : '#C9BDA9'}
+          colorScheme={COLOR_SCHEMES[index % COLOR_SCHEMES.length]}
         />
       ))}
     </div>

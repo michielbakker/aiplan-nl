@@ -3,7 +3,7 @@ import React from 'react';
 
 const DeltaPlanIntro = () => {
   return (
-    <section className="mb-10">
+    <section className="mb-6">
       <h2 className="text-2xl font-bold mb-4 text-gray-800">Een nieuw Deltaplan voor AI</h2>
       <div className="prose max-w-none text-gray-700">
         <p>
