@@ -88,7 +88,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
       <article className="px-12 py-8 max-md:px-8" style={{ backgroundColor }}>
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-full max-md:w-full max-md:ml-0">
-            <div className="flex w-full flex-col text-[#0C0011] font-medium mt-[5px] max-md:mt-10">
+            <div className="flex w-full flex-col text-[#0C0011] font-medium mt-[5px]">
               <h2 className="text-[22px] leading-none font-space-grotesk mt-[.5rem]" style={{ color: textColor }}>
                 {number}. {extractedTitle}
               </h2>

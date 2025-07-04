@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <>
       {/* Top navigation header with logo */}
-      <header className={`flex justify-between items-start p-8 max-md:p-5 max-sm:p-4 ${className}`}>
+      <header className={`flex justify-between items-start p-8 max-md:p-5 max-sm:p-4 ${className}`} style={{ marginBottom: '8px' }}>
         <div className="ai-plan-logo">
           <svg
             width="147"
