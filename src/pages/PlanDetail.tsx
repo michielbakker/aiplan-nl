@@ -39,9 +39,9 @@ const PlanDetail = () => {
   const content = itemDetails[itemNumber as keyof typeof itemDetails] || '';
 
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ECD9F4' }}>
       <div className="max-w-4xl mx-auto">
-        <Link to="/" className="inline-block mb-8">
+        <Link to={`/#plan-item-${itemNumber}`} className="inline-block mb-8">
           <Button variant="ghost" className="flex items-center gap-2 text-gray-600 hover:text-gray-800">
             <ChevronLeft size={16} />
             <span>Terug naar overzicht</span>
@@ -58,9 +58,9 @@ const PlanDetail = () => {
         
         {/* Feedback section */}
         <div className="mt-12 pt-8 border-t border-gray-200 px-12 max-md:px-8">
-          <div className="flex items-center gap-2 text-gray-600">
-            <MessageCircle size={20} />
-            <span className="whitespace-nowrap">
+          <div className="flex items-start gap-2 text-gray-600">
+            <MessageCircle size={20} className="flex-shrink-0 mt-0.5" />
+            <div className="flex-1">
               <span>Heb je feedback, suggesties of relevante links? </span>
               <a 
                 href="https://github.com/michielbakker/aiplan-nl"
@@ -79,7 +79,7 @@ const PlanDetail = () => {
               >
                 laat je email en idee achter.
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>

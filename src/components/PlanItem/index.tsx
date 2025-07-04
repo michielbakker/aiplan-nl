@@ -82,7 +82,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
   const buttonHoverColor = getDarkerColor(buttonBgColor);
 
   return (
-    <section className="w-full mt-[1rem] max-md:mt-10">
+    <section id={`plan-item-${number}`} className="w-full mt-[1rem] max-md:mt-10">
       <article className="px-12 py-8 max-md:px-8" style={{ backgroundColor }}>
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-full max-md:w-full max-md:ml-0">
