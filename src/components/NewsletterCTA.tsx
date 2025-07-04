@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 
 const NewsletterCTA = () => {
   return (
-    <div className="my-10 bg-[#315FD8] px-12 py-8 max-md:px-8">
+    <div className="my-10 bg-[#101E59] px-12 py-8 max-md:px-8">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <h3 className="text-lg text-white">Wil je op een andere manier bijdragen of op de hoogte blijven?</h3>
         <Button 
@@ -16,8 +16,8 @@ const NewsletterCTA = () => {
         >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnUR6k6OR3ToKp3DgSLfWzerepExXClIIiImqXKrTfskkpug/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="flex items-center">
             <span className="mr-3">Laat je email achter</span>
-            <div className="w-8 h-8 flex items-center justify-center mr-1 bg-[#315FD8]">
-              <ExternalLink size={16} />
+            <div className="w-8 h-8 flex items-center justify-center mr-1 bg-[#101E59]">
+              <ExternalLink size={16} className="text-white" />
             </div>
           </a>
         </Button>
