@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from '../components/Header';
 import IntroSection from '../components/IntroSection';
 import DeltaPlanIntro from '../components/DeltaPlanIntro';
@@ -7,6 +7,7 @@ import PlanItemsList from '../components/PlanItemsList';
 import ContributionCTA from '../components/ContributionCTA';
 import NewsletterCTA from '../components/NewsletterCTA';
 import Footer from '../components/Footer';
+import { Button } from '@/components/ui/button';
 
 // Import all plan item short markdown content
 import item1Short from '../../plan-items/item-1-short.md?raw';
@@ -59,7 +60,45 @@ const Index = () => {
 		<div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
 			<div className="max-w-3xl mx-auto">
 				<Header />
-
+				{/* Content header with spacing for fixed navigation */}
+				<div className="text-center mb-12">
+					<h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
+						Nederland klaarmaken<br />
+						voor komst Superintelligentie
+					</h1>
+					<h2 className="font-[400] text-gray-700 font-inter" style={{ fontSize: '1.1rem', marginTop: '1rem', marginBottom: '0.5rem' }}>
+						Een Deltaplan voor de AI Transitie
+					</h2>
+					<div className="flex justify-center items-center space-x-2 text-gray-600 mb-4 font-inter" style={{ fontSize: '0.9rem' }}>
+						<a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+							Michiel Bakker
+						</a>
+						<span className="text-gray-400">en</span>
+						<a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+							Jelle Prins
+						</a>
+					</div>
+					<div className="flex justify-center">
+						<Button
+							asChild
+							className="gap-0 pl-4 pr-4 rounded-none text-white bg-[#554664] hover:bg-[#443552] transition-colors duration-200 font-inter text-sm"
+						>
+							<a
+								href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center gap-2"
+							>
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" />
+									<path d="M2 12h20" stroke="white" strokeWidth="2" />
+									<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="white" strokeWidth="2" />
+								</svg>
+								English
+							</a>
+						</Button>
+					</div>
+				</div>
 				<div className="flex justify-center my-8">
 					<svg width="333" height="432" viewBox="0 0 832 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g clipPath="url(#clip0_4056_181)">

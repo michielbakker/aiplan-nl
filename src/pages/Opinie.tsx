@@ -1,14 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 const Opinie = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#EDE9F4' }}>
       <Header />
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="space-y-8">
           <div>
             <h1 className="text-3xl font-bold mb-4 text-black font-space-grotesk">
@@ -52,22 +50,20 @@ const Opinie = () => {
           
           <div className="mt-12 pt-8 border-t border-gray-300">
             <p className="mb-6">
-              Meer weten over ons initiatief? <Link to="/" className="text-blue-600 hover:text-blue-800 underline">Ga naar de homepagina van het AI Deltaplan.</Link>
+              Meer weten over dit initiatief? Ga naar de <Link to="/" className="text-blue-600 hover:text-blue-800 underline">homepagina van het AI Deltaplan.</Link>
             </p>
             
             <div>
               <h3 className="font-bold mb-4 text-lg">Ondertekenaars:</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>Dr. Anna van der Berg - AI-onderzoeker, Universiteit van Amsterdam</li>
-                <li>Prof. Mark Jansen - Hoogleraar Computer Science, TU Delft</li>
-                <li>Ingrid Smit - Tech entrepreneur en oprichter van TechNL</li>
+              <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                <li>Ondertekenaar 1</li>
+                <li>Ondertekenaar 2</li>
+                <li>Ondertekenaar 3</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 };

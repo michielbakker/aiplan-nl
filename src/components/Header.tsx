@@ -52,46 +52,6 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </svg>
         </div>
       </header>
-
-      {/* Content header with spacing for fixed navigation */}
-      <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
-          Nederland klaarmaken<br/>
-          voor komst Superintelligentie
-        </h1>
-        <h2 className="font-[400] text-gray-700 font-inter" style={{ fontSize: '1.1rem', marginTop: '1rem', marginBottom: '0.5rem' }}>
-          Een Deltaplan voor de AI Transitie
-        </h2>
-        <div className="flex justify-center items-center space-x-2 text-gray-600 mb-4 font-inter" style={{ fontSize: '0.9rem' }}>
-          <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-            Michiel Bakker
-          </a>
-          <span className="text-gray-400">en</span>
-          <a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-            Jelle Prins
-          </a>
-        </div>
-        <div className="flex justify-center">
-          <Button
-            asChild
-            className="gap-0 pl-4 pr-4 rounded-none text-white bg-[#554664] hover:bg-[#443552] transition-colors duration-200 font-inter text-sm"
-          >
-            <a 
-              href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2"/>
-                <path d="M2 12h20" stroke="white" strokeWidth="2"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="white" strokeWidth="2"/>
-              </svg>
-              English
-            </a>
-          </Button>
-        </div>
-      </div>
     </>
   );
 };
