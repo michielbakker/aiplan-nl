@@ -53,8 +53,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       </header>
 
       {/* Content header with spacing for fixed navigation */}
-      <header className="text-center mb-12 pt-24">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 font-space-grotesk">
+      <div className="text-center mb-12 pt-24">
+        <h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
           Nederland klaarmaken voor komst Superintelligentie
         </h1>
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 font-inter">
@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             🇬🇧 English
           </a>
         </div>
-      </header>
+      </div>
     </>
   );
 };
