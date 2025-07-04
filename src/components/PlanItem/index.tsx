@@ -2,6 +2,7 @@
 import React, { useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import ReactMarkdown from 'react-markdown';
+import { ArrowRight } from 'lucide-react';
 
 const extractTitleFromMarkdown = (markdown: string) => {
   // Look for a title in the format ### **Title**
@@ -33,7 +34,7 @@ const extractContentFromMarkdown = (markdown: string) => {
   return contentLines.join('\n').trim();
 };
 
-const PlanItem = ({ number, content }) => {
+const PlanItem = ({ number, content, backgroundColor }) => {
   const extractedTitle = useMemo(() => {
     const extracted = extractTitleFromMarkdown(content);
     return extracted || `Item ${number}`;
@@ -48,9 +49,11 @@ const PlanItem = ({ number, content }) => {
     console.log('Learn more clicked for item', number);
   };
 
+  const buttonBgColor = backgroundColor === '#C9BDA9' ? '#594F3F' : '#88AAC9';
+
   return (
-    <section className="w-full max-w-[890px] mt-[89px] max-md:mt-10">
-      <article className="bg-[#EDE9F4] px-20 py-[54px] max-md:px-5">
+    <section className="w-full mt-[89px] max-md:mt-10">
+      <article className="px-8 py-[54px] max-md:px-5" style={{ backgroundColor }}>
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-6/12 max-md:w-full max-md:ml-0">
             <div className="flex w-full flex-col text-[#0C0011] font-medium mt-[5px] max-md:mt-10">
@@ -65,16 +68,21 @@ const PlanItem = ({ number, content }) => {
               </div>
               
               <div className="mt-8">
-                <Button onClick={handleLearnMoreClick} className="gap-2 pl-2">
-                  Lees meer
+                <Button 
+                  onClick={handleLearnMoreClick} 
+                  className="gap-0 pl-4 pr-0 rounded-none text-white hover:opacity-90"
+                  style={{ backgroundColor: buttonBgColor }}
+                >
+                  <span className="mr-3">Lees meer</span>
+                  <div className="w-8 h-8 flex items-center justify-center" style={{ backgroundColor: buttonBgColor }}>
+                    <ArrowRight size={16} />
+                  </div>
                 </Button>
               </div>
             </div>
           </div>
         </div>
       </article>
-      
-      <div className="bg-[#C9BDA9] flex w-full shrink-0 h-14 mt-4" />
     </section>
   );
 };

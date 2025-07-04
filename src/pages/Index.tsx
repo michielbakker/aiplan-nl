@@ -45,7 +45,7 @@ const Index = () => {
   }));
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#fff' }}>
       <div className="max-w-3xl mx-auto">
         <Header />
         
