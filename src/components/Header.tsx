@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <>
       {/* Top navigation header with logo */}
-      <header className={`flex justify-between items-start p-8 max-md:p-5 max-sm:p-4 ${className} fixed top-0 left-0 right-0 bg-[#EDE9F4]/95 backdrop-blur-sm z-50 transition-all duration-300`}>
+      <header className={`flex justify-between items-start p-8 max-md:p-5 max-sm:p-4 ${className}`}>
         <div className="ai-plan-logo">
           <svg
             width="147"
@@ -54,15 +54,15 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       </header>
 
       {/* Content header with spacing for fixed navigation */}
-      <div className="text-center mb-12 pt-24">
+      <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
           Nederland klaarmaken<br/>
           voor komst Superintelligentie
         </h1>
-        <h2 className="text-xl sm:text-2xl font-[400] mt-[1.8rem] text-gray-700 mb-4 font-inter">
+        <h2 className="font-[400] text-gray-700 font-inter" style={{ fontSize: '1.1rem', marginTop: '1rem', marginBottom: '0.5rem' }}>
           Een Deltaplan voor de AI Transitie
         </h2>
-        <div className="flex justify-center items-center space-x-2 text-gray-600 mb-4 font-inter">
+        <div className="flex justify-center items-center space-x-2 text-gray-600 mb-4 font-inter" style={{ fontSize: '0.9rem' }}>
           <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
             Michiel Bakker
           </a>
