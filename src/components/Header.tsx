@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       {/* Content header with spacing for fixed navigation */}
       <div className="text-center mb-12 pt-24">
         <h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
-          Nederland klaarmaken</br>
+          Nederland klaarmaken<br/>
           voor komst Superintelligentie
         </h1>
         <h2 className="text-xl sm:text-2xl font-[400] mt-[1.8rem] text-gray-700 mb-4 font-inter">
