@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import IntroSection from '../components/IntroSection';
 import DeltaPlanIntro from '../components/DeltaPlanIntro';
@@ -43,6 +43,17 @@ const Index = () => {
 		number: index + 1,
 		content
 	}));
+
+	// Handle scrolling to hash fragments when page loads
+	useEffect(() => {
+		const hash = window.location.hash;
+		if (hash) {
+			const element = document.querySelector(hash);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	}, []);
 
 	return (
 		<div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
