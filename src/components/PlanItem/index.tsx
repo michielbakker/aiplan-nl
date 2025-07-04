@@ -1,7 +1,6 @@
 
 import React, { useMemo } from 'react';
-import { ChevronDown, ChevronRight } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import ReactMarkdown from 'react-markdown';
 
 const extractTitleFromMarkdown = (markdown: string) => {
@@ -15,78 +14,68 @@ const extractTitleFromMarkdown = (markdown: string) => {
   return null;
 };
 
-const PlanItem = ({ number, title, content, isExpanded, toggleExpand }) => {
+const extractContentFromMarkdown = (markdown: string) => {
+  // Extract content after the title, removing the ### **Title** part
+  const lines = markdown.split('\n');
+  const contentLines = [];
+  let foundTitle = false;
+  
+  for (const line of lines) {
+    if (line.match(/###\s+\*\*([^*]+)\*\*/)) {
+      foundTitle = true;
+      continue;
+    }
+    if (foundTitle && line.trim()) {
+      contentLines.push(line);
+    }
+  }
+  
+  return contentLines.join('\n').trim();
+};
+
+const PlanItem = ({ number, content }) => {
   const extractedTitle = useMemo(() => {
     const extracted = extractTitleFromMarkdown(content);
-    return extracted || title; // Fall back to provided title if extraction fails
-  }, [content, title]);
+    return extracted || `Item ${number}`;
+  }, [content, number]);
+
+  const extractedContent = useMemo(() => {
+    return extractContentFromMarkdown(content);
+  }, [content]);
+
+  const handleLearnMoreClick = () => {
+    // Handle learn more functionality
+    console.log('Learn more clicked for item', number);
+  };
 
   return (
-    <Card>
-      <div 
-        className="p-4 flex items-center justify-between cursor-pointer hover:bg-gray-50"
-        onClick={toggleExpand}
-      >
-        <div className="flex items-center">
-          <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white mr-3">
-            {number}
+    <section className="w-full max-w-[890px] mt-[89px] max-md:mt-10">
+      <article className="bg-[#EDE9F4] px-20 py-[54px] max-md:px-5">
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+          <div className="w-6/12 max-md:w-full max-md:ml-0">
+            <div className="flex w-full flex-col text-[#0C0011] font-medium mt-[5px] max-md:mt-10">
+              <h2 className="text-[22px] leading-none font-space-grotesk">
+                {extractedTitle}
+              </h2>
+              
+              <div className="text-[10px] font-normal leading-[15px] self-stretch mt-[25px] font-inter">
+                <ReactMarkdown>
+                  {extractedContent}
+                </ReactMarkdown>
+              </div>
+              
+              <div className="mt-8">
+                <Button onClick={handleLearnMoreClick} className="gap-2 pl-2">
+                  Lees meer
+                </Button>
+              </div>
+            </div>
           </div>
-          <h3 className="text-lg font-semibold">{extractedTitle}</h3>
         </div>
-        {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
-      </div>
+      </article>
       
-      {isExpanded && (
-        <div className="px-6 pb-6 pt-2 text-gray-700 border-t border-gray-100">
-          <div className="prose max-w-none markdown-content">
-            <ReactMarkdown components={{
-              // Skip any h3 headings that could be title duplicates
-              h3: ({ node, ...props }) => {
-                // If we have children, check their content
-                if (node.children && node.children.length > 0) {
-                  const firstChild = node.children[0];
-                  
-                  // Handle text nodes (checking for ** which indicates title format)
-                  if (firstChild.type === 'text') {
-                    const textContent = (firstChild as { value: string }).value;
-                    if (textContent.includes('**')) {
-                      return null; // Skip this heading - it's a title
-                    }
-                  }
-                  
-                  // Check for strong/bold nodes which would also indicate a title
-                  // We need to check if it's an element type with tagName 'strong'
-                  if (firstChild.type === 'element' && 'tagName' in firstChild && firstChild.tagName === 'strong') {
-                    return null; // Skip this heading - it likely contains the title
-                  }
-                }
-                
-                return <h3 {...props} />;
-              },
-              // Also handle any potential numbered prefixes in paragraphs
-              p: ({ node, ...props }) => {
-                if (node.children && node.children.length > 0) {
-                  // Check if this paragraph starts with a numbered prefix like "5. Europese rekenkracht"
-                  const firstChild = node.children[0];
-                  if (firstChild.type === 'text') {
-                    const textContent = (firstChild as { value: string }).value;
-                    if (textContent.match(/^\d+\.\s+/)) {
-                      // If this contains a title-like format, don't render it
-                      if (textContent.includes(extractedTitle)) {
-                        return null;
-                      }
-                    }
-                  }
-                }
-                return <p {...props} className="mb-4" />;
-              }
-            }}>
-              {content}
-            </ReactMarkdown>
-          </div>
-        </div>
-      )}
-    </Card>
+      <div className="bg-[#C9BDA9] flex w-full shrink-0 h-14 mt-4" />
+    </section>
   );
 };
 
