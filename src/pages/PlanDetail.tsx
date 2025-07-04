@@ -53,7 +53,7 @@ const PlanDetail = () => {
           </Button>
         </Link>
         
-        <div className="px-24 py-6 max-md:px-16" style={{ backgroundColor: '#101E59' }}>
+        <div className="px-16 py-6 max-md:px-12" style={{ backgroundColor: '#101E59' }}>
           <div className="prose max-w-none markdown-content text-white font-inter">
             <ReactMarkdown>
               {processedContent}

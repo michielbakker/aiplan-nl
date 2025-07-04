@@ -185,6 +185,11 @@
   color: white !important;
 }
 
+/* Detail page specific heading sizing */
+.text-white .markdown-content h2 {
+  font-size: 1.8rem !important;
+}
+
 /* Add more space between sections */
 section + section {
   margin-top: 3rem;
