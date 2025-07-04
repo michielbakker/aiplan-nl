@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 interface ColorScheme {
   backgroundColor: string;
   buttonBgColor: string;
+  textColor?: string;
+  buttonTextColor?: string;
 }
 
 interface PlanItemProps {
@@ -61,7 +63,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
     navigate(`/plan/${number}`);
   };
 
-  const { backgroundColor, buttonBgColor } = colorScheme;
+  const { backgroundColor, buttonBgColor, textColor, buttonTextColor } = colorScheme;
 
   // Create a darker shade of the button color for hover effect
   const getDarkerColor = (color: string) => {
@@ -87,11 +89,11 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-full max-md:w-full max-md:ml-0">
             <div className="flex w-full flex-col text-[#0C0011] font-medium mt-[5px] max-md:mt-10">
-              <h2 className="text-[22px] leading-none font-space-grotesk mt-[.5rem]">
+              <h2 className="text-[22px] leading-none font-space-grotesk mt-[.5rem]" style={{ color: textColor }}>
                 {number}. {extractedTitle}
               </h2>
               
-              <div className="text-[14px] font-normal font-inter leading-[170%]">
+              <div className="text-[14px] font-normal font-inter leading-[170%]" style={{ color: textColor }}>
                 <ReactMarkdown>
                   {extractedContent}
                 </ReactMarkdown>
@@ -109,10 +111,10 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
                     e.currentTarget.style.backgroundColor = buttonBgColor;
                   }}
                 >
-                  <span className="mr-3">Lees meer</span>
-                  <div className="w-8 h-8 flex items-center justify-center mr-1" style={{ backgroundColor: "white" }}>
+                  <span className="mr-3" style={{ color: buttonTextColor }}>Lees meer</span>
+                  <div className="w-8 h-8 flex items-center justify-center mr-1" style={{ backgroundColor: buttonBgColor == "white" ? backgroundColor : "white" }}>
                     <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 6H14M10 2L14 6L10 10" stroke="black" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M0 6H14M10 2L14 6L10 10" stroke={buttonBgColor == "white" ? "white" : "black"} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                 </Button>

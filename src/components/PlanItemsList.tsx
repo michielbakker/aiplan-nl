@@ -12,6 +12,8 @@ interface PlanItemsListProps {
 interface ColorScheme {
   backgroundColor: string;
   buttonBgColor: string;
+  textColor?: string;
+  buttonTextColor?: string;
 }
 
 const COLOR_SCHEMES: ColorScheme[] = [
@@ -20,9 +22,11 @@ const COLOR_SCHEMES: ColorScheme[] = [
     buttonBgColor: '#594F3F',
   },
   {
-    backgroundColor: 'white',
-    buttonBgColor: '#1B0025',
-  }
+    backgroundColor: '#101E59',
+    buttonBgColor: 'white',
+	textColor: 'white',
+	buttonTextColor: 'black',
+  },
 ];
 
 const PlanItemsList: React.FC<PlanItemsListProps> = ({ planItems }) => {
