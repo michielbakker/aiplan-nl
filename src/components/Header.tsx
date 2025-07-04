@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 interface HeaderProps {
   className?: string;
@@ -55,9 +56,10 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       {/* Content header with spacing for fixed navigation */}
       <div className="text-center mb-12 pt-24">
         <h1 className="text-3xl sm:text-4xl font-[500] mb-4 text-gray-900 font-space-grotesk">
-          Nederland klaarmaken voor komst Superintelligentie
+          Nederland klaarmaken</br>
+          voor komst Superintelligentie
         </h1>
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 font-inter">
+        <h2 className="text-xl sm:text-2xl font-[400] mt-[1.8rem] text-gray-700 mb-4 font-inter">
           Een Deltaplan voor de AI Transitie
         </h2>
         <div className="flex justify-center items-center space-x-2 text-gray-600 mb-4 font-inter">
@@ -70,14 +72,20 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </a>
         </div>
         <div className="flex justify-center">
-          <a 
-            href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-inter"
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="text-[#554664] border-[#554664] hover:bg-[#f6f7f9] hover:text-[#2a2134] hover:border-[#2a2134] font-inter text-sm transition-all duration-200 shadow-sm pl-4"
           >
-            🇬🇧 English
-          </a>
+            <a 
+              href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              🇬🇧 English
+            </a>
+          </Button>
         </div>
       </div>
     </>
