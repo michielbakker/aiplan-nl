@@ -39,7 +39,7 @@ const PlanDetail = () => {
   const content = itemDetails[itemNumber as keyof typeof itemDetails] || '';
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ECD9F4' }}>
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
       <div className="max-w-4xl mx-auto">
         <Link to={`/#plan-item-${itemNumber}`} className="inline-block mb-8">
           <Button variant="ghost" className="flex items-center gap-2 text-gray-600 hover:text-gray-800">
@@ -48,7 +48,7 @@ const PlanDetail = () => {
           </Button>
         </Link>
         
-        <div className="bg-gray-50 px-12 py-12 max-md:px-8">
+        <div className="bg-gray-50 px-16 py-8 max-md:px-12">
           <div className="prose max-w-none markdown-content">
             <ReactMarkdown>
               {content}

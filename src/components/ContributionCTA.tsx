@@ -7,7 +7,7 @@ const ContributionCTA = () => {
   return (
     <div className="my-10 bg-[#1B0025] px-12 py-8 max-md:px-8">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <h3 className="text-lg font-bold text-white">Schrijf zelf mee via onze Github</h3>
+        <h3 className="text-lg text-white">Schrijf zelf mee via onze Github</h3>
         <Button 
           asChild
           size="default"

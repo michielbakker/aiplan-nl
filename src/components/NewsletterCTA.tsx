@@ -7,7 +7,7 @@ const NewsletterCTA = () => {
   return (
     <div className="my-10 bg-[#1B0025] px-12 py-8 max-md:px-8">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <h3 className="text-lg font-bold text-white">Wil je op een andere manier bijdragen of op de hoogte blijven?</h3>
+        <h3 className="text-lg text-white">Wil je op een andere manier bijdragen of op de hoogte blijven?</h3>
         <Button 
           asChild
           size="default"
