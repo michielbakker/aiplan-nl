@@ -1,12 +1,12 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
 interface HeaderProps {
   className?: string;
+  children?: React.ReactNode;
 }
 
-const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+const Header: React.FC<HeaderProps> = ({ className = '', children }) => {
   return (
     <>
       {/* Top navigation header with logo */}
@@ -51,6 +51,13 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             />
           </svg>
         </div>
+        
+        {/* Right side content */}
+        {children && (
+          <div className="flex items-center">
+            {children}
+          </div>
+        )}
       </header>
     </>
   );

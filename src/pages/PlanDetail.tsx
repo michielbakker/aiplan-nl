@@ -1,5 +1,5 @@
 
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
@@ -44,10 +44,10 @@ const PlanDetail = () => {
 	}, [content, itemNumber]);
 
 	return (
-		<div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#EDE9F4' }}>
+		<div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'white' }}>
 			<div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-24">
-				<Link to={`/#plan-item-${itemNumber}`} className="inline-block">
-					<Button variant="ghost" className="flex items-center gap-2 text-white hover:text-white hover:bg-black" style={{ backgroundColor: '#101E59' }}>
+				<Link to={`/plan#plan-item-${itemNumber}`} className="inline-block">
+					<Button variant="ghost" className="flex items-center gap-2 text-white hover:text-white rounded-none bg-[#FF3333] hover:bg-[#d92c2c] transition-colors duration-200">
 						<ChevronLeft size={16} />
 						<span>Terug naar overzicht</span>
 					</Button>

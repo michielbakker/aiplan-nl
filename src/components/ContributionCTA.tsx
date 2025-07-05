@@ -4,26 +4,35 @@ import { Button } from '@/components/ui/button';
 import { Github } from 'lucide-react';
 
 const ContributionCTA = () => {
-  return (
-    <div className="my-10 bg-[#101E59] px-12 py-8 max-md:px-8">
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <h3 className="text-lg text-white">Schrijf zelf mee via onze Github</h3>
-        <Button 
-          asChild
-          size="default"
-          variant="default" 
-          className="gap-0 pl-4 pr-0 rounded-none text-black whitespace-nowrap font-medium bg-gray-50 hover:bg-gray-100"
-        >
-          <a href="https://github.com/michielbakker/aiplan-nl" target="_blank" rel="noopener noreferrer" className="flex items-center">
-            <span className="mr-3">Naar Github</span>
-            <div className="w-8 h-8 flex items-center justify-center mr-1 bg-[#101E59]">
-              <Github size={16} className="text-white" />
-            </div>
-          </a>
-        </Button>
-      </div>
-    </div>
-  );
+	return (
+		<div className="my-10 bg-[#315FD8] px-8 py-8 max-md:px-6">
+			<div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+				<div className="flex-1 text-center sm:text-left">
+					<h3 className="text-xl font-semibold text-white mb-2 font-space-grotesk">
+						Schrijf zelf mee via onze GitHub
+					</h3>
+					<p className="text-blue-100 text-sm">
+						Laat suggesties achter voor de inhoud van het deltaplan.
+					</p>
+				</div>
+				<Button
+					asChild
+					size="lg"
+					className="gap-2 px-6 py-3 rounded-md text-gray-900 font-semibold bg-white hover:bg-gray-50 transition-colors duration-200 shadow-sm hover:shadow-md"
+				>
+					<a
+						href="https://github.com/michielbakker/aiplan-nl"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center gap-2"
+					>
+						<Github size={20} />
+						<span>Naar Github</span>
+					</a>
+				</Button>
+			</div>
+		</div>
+	);
 };
 
 export default ContributionCTA;
