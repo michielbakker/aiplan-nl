@@ -31,7 +31,7 @@ const Index = () => {
 								AI vraagt om politieke keuzes – nu
 							</h1>
 							<div className="text-gray-600 mb-8">
-								<p className="mb-1">Door Renée Frissen, Jelle Prins en Michiel Bakker</p>
+								<p className="mb-1">Door Renée Frissen, Jelle Prins, Michiel Bakker en Stan van Baarsen</p>
 								<p>1 juli 2025</p>
 							</div>
 						</div>

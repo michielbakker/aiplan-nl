@@ -18,7 +18,7 @@ interface ColorScheme {
 
 const COLOR_SCHEMES: ColorScheme[] = [
   {
-    backgroundColor: '#df2929',
+    backgroundColor: '#315fd8',
     buttonBgColor: 'white',
 	textColor: 'white',
 	buttonTextColor: 'black',
