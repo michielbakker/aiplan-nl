@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
+import SignatoriesList from '@/components/SignatoriesList';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -22,7 +23,6 @@ const Index = () => {
 						</a>
 					</Button>
 				</Header>
-
 
 				<div className="px-4 sm:px-6 lg:px-8 py-4">
 					<div className="space-y-8">
@@ -92,9 +92,7 @@ const Index = () => {
 
 							<div>
 								<h3 className="font-bold mb-4 text-lg">Ondertekenaars:</h3>
-								<ul className="space-y-2 text-gray-700 list-disc list-inside">
-									<li>...</li>
-								</ul>
+								<SignatoriesList />
 							</div>
 						</div>
 					</div>
