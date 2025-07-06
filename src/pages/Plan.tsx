@@ -19,6 +19,7 @@ import item7Short from '../../plan-items/item-7-short.md?raw';
 import item8Short from '../../plan-items/item-8-short.md?raw';
 import item9Short from '../../plan-items/item-9-short.md?raw';
 import item10Short from '../../plan-items/item-10-short.md?raw';
+import { Link } from 'react-router-dom';
 
 const extractTitleFromMarkdown = (markdown: string) => {
 	// Look for a title in the format ### **Title**
@@ -45,25 +46,24 @@ const Plan = () => {
 	}));
 
 	return (
-		<div className="min-h-screen py-4 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]">
+		<div className="min-h-screen bg-[#F8F9FA]">
 			<div className="max-w-3xl mx-auto">
 				<Header>
 					<Button
 						asChild
 						className="gap-2 pl-4 pr-4 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
 					>
-						<a
-							href="/"
+						<Link
+							to="/"
 							className="flex items-center gap-2"
 						>
 							Zie onze Open Brief
 							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 							</svg>
-						</a>
+						</Link>
 					</Button>
 				</Header>
-				{/* Content header with spacing for fixed navigation */}
 				<div className="text-center mb-12">
 					<h1 className="text-3xl sm:text-4xl font-[500] mb-2 text-gray-900 font-space-grotesk">
 						Nederland klaarmaken<br />

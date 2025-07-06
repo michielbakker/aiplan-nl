@@ -8,20 +8,22 @@ const Index = () => {
 		<div className="min-h-screen bg-[#F8F9FA]">
 			<div className="max-w-3xl mx-auto">
 				<Header>
-					<Button
-						asChild
-						className="gap-2 pl-4 pr-4 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
-					>
-						<a
-							href="/plan"
-							className="flex items-center gap-2"
+					<div className="flex items-center gap-2">
+						<Button
+							asChild
+							className="gap-2 pl-4 pr-4 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
 						>
-							Zie ons Deltaplan
-							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-							</svg>
-						</a>
-					</Button>
+							<Link
+								to="/plan"
+								className="flex items-center gap-2"
+							>
+								Zie ons Deltaplan
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
+							</Link>
+						</Button>
+					</div>
 				</Header>
 
 				<div className="px-4 sm:px-6 lg:px-8 py-4">
@@ -30,13 +32,31 @@ const Index = () => {
 							<h1 className="text-3xl font-bold mb-4 text-black font-space-grotesk">
 								AI vraagt om politieke keuzes – nu
 							</h1>
-							<div className="text-gray-600 mb-8">
-								<p className="mb-1">Door Renée Frissen, Jelle Prins, Michiel Bakker en Stan van Baarsen</p>
+							<div className="text-gray-600 mb-4">
+								<p className="mb-1">Door <a href="http://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline">Renée Frissen</a>, <a href="https://jelleprins.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline">Jelle Prins</a>, <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline">Michiel Bakker</a> en <a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline">Stan van Baarsen</a></p>
 								<p>1 juli 2025</p>
 							</div>
+							<Button
+								asChild
+								className="gap-2 pl-4 pr-4 rounded-none text-white bg-[#df2929] hover:bg-[#c21c1c] transition-colors duration-200 font-inter text-sm"
+							>
+								<a
+									href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex items-center gap-2"
+								>
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" />
+										<path d="M2 12h20" stroke="white" strokeWidth="2" />
+										<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="white" strokeWidth="2" />
+									</svg>
+									English
+								</a>
+							</Button>
 						</div>
 
-						<div className="space-y-6 text-black leading-relaxed">
+						<div className="space-y-4 !mt-4 text-black leading-relaxed">
 							<p className="font-bold">
 								Niet eerder stond de wereld zo duidelijk aan de vooravond van een technologische transformatie die al onze waarden zo op de proef kan stellen als AI. Deze technologie bepaalt wie de komende decennia economisch en geopolitiek leiderschap heeft. Het bepaalt of we onze democratische waarden kunnen waarborgen of afhankelijk worden van systemen die anderen voor ons bouwen. Nu de laatste hand wordt gelegd aan de partijprogramma's, dringt een brede coalitie van experts er bij onze politieke leiders op aan: maak AI tot topprioriteit, of accepteer dat Nederland een digitale kolonie wordt.
 							</p>
@@ -85,13 +105,16 @@ const Index = () => {
 							</Button>
 						</div>
 
-						<div className="mt-12 pt-8 border-t border-gray-300">
+						<div className="border-t border-gray-300 pt-8">
 							<p className="mb-6">
 								Meer weten over dit initiatief? Lees <Link to="/plan" className="text-[#315FD8] hover:text-[#1e3a8a] underline">ons tien-punten AI Deltaplan.</Link>
 							</p>
+						</div>
+
+						<div className="mt-12 pt-8 border-t border-gray-300">
 
 							<div>
-								<h3 className="font-bold mb-4 text-lg">Ondertekenaars:</h3>
+								<h1 className="font-bold mb-4 text-3xl">Ondertekenaars:</h1>
 								<SignatoriesList />
 							</div>
 						</div>
