@@ -105,9 +105,28 @@ const Index = () => {
 					</div>
 
 					<div className="border-t border-gray-300 pt-8">
-						<p className="mb-6">
-							Meer weten over dit initiatief? Lees <Link to="/plan" className="text-[#315FD8] hover:text-[#1e3a8a] underline">ons tien-punten AI Deltaplan.</Link>
-						</p>
+						<div className="bg-white rounded-lg border border-gray-200 p-6 mb-6 shadow-sm">
+							<h3 className="text-xl font-bold mb-3 text-black font-space-grotesk">
+								Bekijk ook ons volledige AI Deltaplan
+							</h3>
+							<p className="text-gray-600 mb-4">
+								Eerder publiceerden wij al ons AI Deltaplan met tien concrete maatregelen om Nederland voor te bereiden op de AI-transitie.
+							</p>
+							<Button
+								asChild
+								className="gap-2 px-6 py-3 rounded-md text-white bg-[#315FD8] hover:bg-[#1e3a8a] transition-colors duration-200 font-inter text-base font-medium"
+							>
+								<Link
+									to="/plan"
+									className="flex items-center gap-2"
+								>
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+									</svg>
+									Lees ons voorstel
+								</Link>
+							</Button>
+						</div>
 					</div>
 
 					<div className="mt-12 pt-8 border-t border-gray-300">
