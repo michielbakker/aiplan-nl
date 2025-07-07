@@ -20,11 +20,9 @@ const Header: React.FC<HeaderProps> = ({ className = '', children }) => {
 					</svg>
 				</div>
 
-				{children && (
-					<div className="flex items-center">
-						{children}
-					</div>
-				)}
+				<div className="flex items-center gap-4">
+					{children}
+				</div>
 			</header >
 		</>
 	);

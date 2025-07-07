@@ -63,6 +63,25 @@ const Plan = () => {
 							</svg>
 						</Link>
 					</Button>
+					<Button
+						asChild
+						variant="ghost"
+						className="gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 font-inter text-sm border border-gray-200 hover:border-gray-300"
+					>
+						<a
+							href="https://aiplan-nl.translate.goog/plan?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2"
+						>
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+								<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+								<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
+							</svg>
+							EN
+						</a>
+					</Button>
 				</Header>
 				<div className="text-center mb-12">
 					<h1 className="text-3xl sm:text-4xl font-[500] mb-2 text-gray-900 font-space-grotesk">
