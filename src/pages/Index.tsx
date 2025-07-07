@@ -7,27 +7,9 @@ const Index = () => {
 	return (
 		<div className="bg-[#F8F9FA] min-h-screen">
 			<div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-				<Header>
-					<div className="flex items-center gap-2">
-						<Button
-							asChild
-							className="gap-2 pl-4 pr-1 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
-						>
-							<Link
-								to="/plan"
-								className="flex items-center gap-2"
-							>
-								Zie ons Deltaplan
-								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-								</svg>
-							</Link>
-						</Button>
-					</div>
-				</Header>
+				<Header/>
 
 				<div className="space-y-12">
-					{/* Hero Section */}
 					<div className="bg-white rounded-lg shadow-sm border border-gray-200/50 p-8">
 						<h1 className="text-3xl md:text-4xl font-bold mb-6 text-black font-space-grotesk leading-tight">
 							AI vraagt om politieke keuzes – nu
@@ -115,32 +97,6 @@ const Index = () => {
 									</a>
 								</Button>
 							</div>
-						</div>
-					</div>
-
-					{/* Deltaplan Section */}
-					<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-sm">
-						<div className="max-w-2xl">
-							<h3 className="text-2xl font-bold mb-4 text-black font-space-grotesk">
-								Bekijk ook ons volledige AI Deltaplan
-							</h3>
-							<p className="text-gray-600 mb-6 leading-relaxed">
-								Eerder publiceerden wij al ons AI Deltaplan met tien concrete maatregelen om Nederland voor te bereiden op de AI-transitie.
-							</p>
-							<Button
-								asChild
-								className="gap-2 px-6 py-3 rounded-md text-white bg-[#315FD8] hover:bg-[#1e3a8a] transition-all duration-200 font-inter text-base font-medium shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-							>
-								<Link
-									to="/plan"
-									className="flex items-center gap-2"
-								>
-									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-									</svg>
-									Lees ons voorstel
-								</Link>
-							</Button>
 						</div>
 					</div>
 
