@@ -36,6 +36,8 @@ const Index = () => {
 						<div className="text-gray-600 mb-8 space-y-1">
 							<p className="text-sm">Door <a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Jelle Prins</a>, <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Michiel Bakker</a>, <a href="https://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Renée Frissen</a> en <a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Stan van Baarsen</a></p>
 							<p className="text-sm font-medium">8 juli 2025</p>
+							{/* eerder verschenen in de volkskrant */}
+							<p className="text-sm">Eerder verschenen in <a href="https://www.volkskrant.nl/columns-opinie/opinie-voorkom-dat-nederland-een-digitale-kolonie-wordt-en-investeer-meer-in-ai~bcdaf33a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">de Volkskrant</a></p>
 						</div>
 
 						<div className="space-y-6 text-black leading-relaxed">
