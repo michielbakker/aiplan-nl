@@ -1,43 +1,59 @@
 import Header from '@/components/Header';
 import SignatoriesList from '@/components/SignatoriesList';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
 	return (
 		<div className="bg-[#F8F9FA] min-h-screen">
 			<div className="max-w-3xl mx-auto px-6 lg:px-8 py-4">
 				<Header>
-					<Button
-						asChild
-						variant="ghost"
-						className="gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 font-inter text-sm border border-gray-200 hover:border-gray-300"
-					>
-						<a
-							href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex items-center gap-2"
+					<div className="flex items-center gap-2">
+						<Button
+							asChild
+							className="gap-2 pl-2 pr-1 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
 						>
-							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
-								<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
-								<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
-							</svg>
-							EN
-						</a>
-					</Button>
+							<Link
+								to="/plan"
+								className="flex items-center gap-2"
+							>
+								<span className="hidden min-[426px]:inline">Zie ons Deltaplan</span>
+								<span className="min-[426px]:hidden">Ons Deltaplan</span>
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+								</svg>
+							</Link>
+						</Button>
+						<Button
+							asChild
+							variant="ghost"
+							className="gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 font-inter text-sm border border-gray-200 hover:border-gray-300"
+						>
+							<a
+								href="https://aiplan-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center gap-2"
+							>
+								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+									<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+									<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
+								</svg>
+								EN
+							</a>
+						</Button>
+					</div>
 				</Header>
 
 				<div className="space-y-12">
 					<div className="md:bg-white md:rounded-lg md:shadow-sm md:border md:border-gray-200/50 md:p-8">
-						<h1 className="text-3xl md:text-4xl font-bold mb-6 text-black font-space-grotesk leading-tight">
+						<h1 className="text-3xl md:text-4xl font-bold mb-4 text-black font-space-grotesk leading-tight">
 							AI vraagt om politieke keuzes – nu
 						</h1>
-						<div className="text-gray-600 mb-8 space-y-1">
-							<p className="text-sm">Door <a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Jelle Prins</a>, <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Michiel Bakker</a>, <a href="https://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Renée Frissen</a> en <a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Stan van Baarsen</a></p>
+						<div className="text-gray-600 mb-6 space-y-5">
+							<p className="text-sm">Door <a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Jelle Prins</a>, <a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Michiel Bakker</a>, <a href="https://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Renée Frissen</a> en <a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">Stan van Baarsen</a>. Eerder verschenen in <a href="https://www.volkskrant.nl/columns-opinie/opinie-voorkom-dat-nederland-een-digitale-kolonie-wordt-en-investeer-meer-in-ai~bcdaf33a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">de Volkskrant</a>.</p>
 							<p className="text-sm font-medium">8 juli 2025</p>
-							{/* eerder verschenen in de volkskrant */}
-							<p className="text-sm">Eerder verschenen in <a href="https://www.volkskrant.nl/columns-opinie/opinie-voorkom-dat-nederland-een-digitale-kolonie-wordt-en-investeer-meer-in-ai~bcdaf33a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 underline transition-colors">de Volkskrant</a></p>
 						</div>
 
 						<div className="space-y-6 text-black leading-relaxed">
@@ -105,9 +121,34 @@ const Index = () => {
 						</div>
 					</div>
 
+					<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-sm">
+						<div className="max-w-2xl">
+							<h3 className="text-2xl font-bold mb-4 text-black font-space-grotesk">
+								Bekijk ook ons volledige AI Deltaplan
+							</h3>
+							<p className="text-gray-600 mb-6 leading-relaxed">
+								Eerder publiceerden wij al ons AI Deltaplan met tien concrete maatregelen om Nederland voor te bereiden op de AI-transitie.
+							</p>
+							<Button
+								asChild
+								className="gap-2 px-6 py-3 rounded-md text-white bg-[#315FD8] hover:bg-[#1e3a8a] transition-all duration-200 font-inter text-base font-medium shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+							>
+								<Link
+									to="/plan"
+									className="flex items-center gap-2"
+								>
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+									</svg>
+									Lees ons voorstel
+								</Link>
+							</Button>
+						</div>
+					</div>
+
 					<div className="md:bg-white md:rounded-lg md:border md:border-gray-200/50 md:p-8 md:shadow-sm">
 						<h2 className="text-2xl font-bold mb-6 text-black font-space-grotesk mt-0">
-							Ondertekenaars
+							Ondertekenaars van onze oproep
 						</h2>
 						<SignatoriesList />
 					</div>

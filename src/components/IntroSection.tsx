@@ -7,8 +7,8 @@ interface IntroSectionProps {
 
 const IntroSection: React.FC<IntroSectionProps> = ({ title }) => {
   return (
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">{title}</h2>
+    <section>
+      <h2 className="text-2xl font-bold mb-4 text-gray-800 mt-8">{title}</h2>
       <div className="prose max-w-none text-gray-700">
         {title === "De mondiale AI race" && (
           <>
