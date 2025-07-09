@@ -124,10 +124,10 @@ const Index = () => {
 					<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-sm">
 						<div className="max-w-2xl">
 							<h3 className="text-2xl font-bold mb-4 text-black font-space-grotesk">
-								Bekijk ook ons volledige AI Deltaplan
+								Over ons
 							</h3>
 							<p className="text-gray-600 mb-6 leading-relaxed">
-								Eerder publiceerden wij al ons AI Deltaplan met tien concrete maatregelen om Nederland voor te bereiden op de AI-transitie, of meld je aan voor onze nieuwsbrief om op de hoogte te blijven van ons werk.
+								Wil je meer weten over ons werk? Bekijk ons eerder gepubliceerde AI Deltaplan met tien concrete maatregelen om Nederland voor te bereiden op de AI-transitie, of meld je aan voor onze nieuwsbrief en blijf op de hoogte van onze ontwikkelingen.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Button
