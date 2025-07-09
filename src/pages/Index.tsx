@@ -167,9 +167,6 @@ const Index = () => {
 					</div>
 
 					<div className="md:bg-white md:rounded-lg md:border md:border-gray-200/50 md:p-8 md:shadow-sm">
-						<h2 className="text-2xl font-bold mb-6 text-black font-space-grotesk mt-0">
-							Ondertekenaars van deze oproep
-						</h2>
 						<SignatoriesList />
 					</div>
 				</div>

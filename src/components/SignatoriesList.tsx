@@ -34,12 +34,16 @@ const SignatoriesList = () => {
 
   // Separate priority 1 signatories from priority 2
   const priority1Signatories = signatories.filter(s => s.priority === 1);
-  const priority2Signatories = signatories.filter(s => s.priority === 2);
+  const priority2Signatories = signatories.filter(s => s.priority === 2)
+    .sort((a, b) => a.name.localeCompare(b.name)); // Sort priority 2 alphabetically
   
   const hasPriority2 = priority2Signatories.length > 0;
 
   return (
     <div className="space-y-6">
+      <h2 className="text-2xl font-bold mb-6 text-black font-space-grotesk mt-0">
+        Ondertekenaars van deze oproep ({signatories.length})
+      </h2>
       {/* Priority 1 Signatories */}
       <div className="space-y-4">
         <ol className="space-y-2 text-gray-700">
@@ -64,13 +68,13 @@ const SignatoriesList = () => {
         <div className="space-y-4">
           {/* Show/Hide Priority 2 Button */}
           {!showPriority2 && (
-            <div className="flex justify-center">
+            <div className="flex justify-center pb-6">
               <Button
                 onClick={() => setShowPriority2(true)}
                 variant="outline"
                 className="gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200 font-inter text-sm"
               >
-                Toon ook alle {priority2Signatories.length} ondertekenaars sinds de publicatie
+                Toon ook alle ondertekenaars sinds de publicatie
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -88,7 +92,7 @@ const SignatoriesList = () => {
                 {priority2Signatories.map((signatory, index) => (
                   <li key={signatory.id} className="flex items-start gap-3">
                     <span className="text-sm text-gray-500 font-medium mt-1 min-w-[2rem]">
-                      {index + 1}.
+                      {priority1Signatories.length + index + 1}.
                     </span>
                     <div className="flex flex-col">
                       <span className="font-bold text-base">{signatory.name}</span>
@@ -101,7 +105,7 @@ const SignatoriesList = () => {
               </ol>
               
               {/* Hide Button */}
-              <div className="flex justify-center">
+              <div className="flex justify-center px-4 pb-6">
                 <Button
                   onClick={() => setShowPriority2(false)}
                   variant="outline"
