@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const SignatoriesList = () => {
   const { data: signatories, isLoading, error } = useSignatories();
-  const [showAll, setShowAll] = useState(false);
+  const [showPriority2, setShowPriority2] = useState(false);
 
   if (isLoading) {
     return (
@@ -32,59 +32,89 @@ const SignatoriesList = () => {
     );
   }
 
-  // Separate priority 1 signatories from others
+  // Separate priority 1 signatories from priority 2
   const priority1Signatories = signatories.filter(s => s.priority === 1);
-  const otherSignatories = signatories.filter(s => s.priority !== 1);
+  const priority2Signatories = signatories.filter(s => s.priority === 2);
   
-  // Determine which signatories to display
-  const displayedSignatories = showAll ? signatories : priority1Signatories;
-  const hasMoreSignatories = otherSignatories.length > 0;
+  const hasPriority2 = priority2Signatories.length > 0;
 
   return (
-    <div className="space-y-4">
-      <ol className="space-y-2 text-gray-700">
-        {displayedSignatories.map((signatory, index) => (
-          <li key={signatory.id} className="flex items-start gap-3">
-            <span className="text-sm text-gray-500 font-medium mt-1 min-w-[2rem]">
-              {index + 1}.
-            </span>
-            <div className="flex flex-col">
-              <span className="font-bold text-base">{signatory.name}</span>
-              {signatory.affiliation && (
-                <span className="text-sm text-gray-600">{signatory.affiliation}</span>
-              )}
+    <div className="space-y-6">
+      {/* Priority 1 Signatories */}
+      <div className="space-y-4">
+        <ol className="space-y-2 text-gray-700">
+          {priority1Signatories.map((signatory, index) => (
+            <li key={signatory.id} className="flex items-start gap-3">
+              <span className="text-sm text-gray-500 font-medium mt-1 min-w-[2rem]">
+                {index + 1}.
+              </span>
+              <div className="flex flex-col">
+                <span className="font-bold text-base">{signatory.name}</span>
+                {signatory.affiliation && (
+                  <span className="text-sm text-gray-600">{signatory.affiliation}</span>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      {/* Priority 2 Signatories - Collapsible Section */}
+      {hasPriority2 && (
+        <div className="space-y-4">
+          {/* Show/Hide Priority 2 Button */}
+          {!showPriority2 && (
+            <div className="flex justify-center">
+              <Button
+                onClick={() => setShowPriority2(true)}
+                variant="outline"
+                className="gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200 font-inter text-sm"
+              >
+                Toon ook alle {priority2Signatories.length} ondertekenaars sinds de publicatie
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </Button>
             </div>
-          </li>
-        ))}
-      </ol>
-      
-      {hasMoreSignatories && !showAll && (
-        <div className="flex justify-center">
-          <Button
-            onClick={() => setShowAll(true)}
-            variant="outline"
-            className="gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200 font-inter text-sm"
-          >
-            Toon alle {signatories.length} ondertekenaars
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Button>
-        </div>
-      )}
-      
-      {showAll && hasMoreSignatories && (
-        <div className="flex justify-center">
-          <Button
-            onClick={() => setShowAll(false)}
-            variant="outline"
-            className="gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200 font-inter text-sm"
-          >
-            Toon minder
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 15L12 9L6 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Button>
+          )}
+          
+          {/* Priority 2 Section - Header and List */}
+          {showPriority2 && (
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-black font-space-grotesk">
+                Ondertekenaars sinds de publicatie
+              </h3>
+              <ol className="space-y-2 text-gray-700">
+                {priority2Signatories.map((signatory, index) => (
+                  <li key={signatory.id} className="flex items-start gap-3">
+                    <span className="text-sm text-gray-500 font-medium mt-1 min-w-[2rem]">
+                      {index + 1}.
+                    </span>
+                    <div className="flex flex-col">
+                      <span className="font-bold text-base">{signatory.name}</span>
+                      {signatory.affiliation && (
+                        <span className="text-sm text-gray-600">{signatory.affiliation}</span>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              
+              {/* Hide Button */}
+              <div className="flex justify-center">
+                <Button
+                  onClick={() => setShowPriority2(false)}
+                  variant="outline"
+                  className="gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200 font-inter text-sm"
+                >
+                  Toon minder
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15L12 9L6 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
