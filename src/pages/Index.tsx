@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import SignatoriesList from '@/components/SignatoriesList';
+import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -169,6 +170,8 @@ const Index = () => {
 					<div className="md:bg-white md:rounded-lg md:border md:border-gray-200/50 md:p-8 md:shadow-sm">
 						<SignatoriesList />
 					</div>
+
+					<Footer />
 				</div>
 			</div>
 		</div>
