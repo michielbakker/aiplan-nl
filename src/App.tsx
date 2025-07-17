@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PlanDetail from "./pages/PlanDetail";
 import Article from "./pages/Article";
+import OnsVoorstel from "./pages/OnsVoorstel";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -20,7 +21,8 @@ const App = () => (
 				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Index />} />
-					<Route path="/opinie" element={<Article />} />
+					<Route path="/openbrief" element={<Article />} />
+					<Route path="/ons-voorstel" element={<OnsVoorstel />} />
 					<Route path="/plan/:id" element={<PlanDetail />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>

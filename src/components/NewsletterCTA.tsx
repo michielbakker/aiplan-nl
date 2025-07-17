@@ -9,7 +9,7 @@ const NewsletterCTA = () => {
 	<div className="flex flex-col sm:flex-row items-center justify-between gap-6">
 		<div className="flex-1 text-center sm:text-left">
 			<h3 className="text-xl font-semibold text-white mb-2 font-space-grotesk">
-				Wil je op een andere manier bijdragen?
+				Wil je bijdragen aan het AI Plan?
 			</h3>
 			<p className="text-gray-300 text-sm">
 				Blijf op de hoogte van updates en ontwikkelingen, of schrijf ons een bericht.

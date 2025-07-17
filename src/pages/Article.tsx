@@ -9,42 +9,25 @@ const Article = () => {
 		<div className="bg-[#F8F9FA] min-h-screen">
 			<div className="max-w-3xl mx-auto px-6 lg:px-8 py-4">
 				<Header>
-					<div className="flex items-center gap-2">
-						<Button
-							asChild
-							className="gap-2 pl-2 pr-1 rounded-none text-gray-900 bg-transparent hover:bg-black/5 transition-colors duration-200 font-inter text-sm"
+					<Button
+						asChild
+						variant="ghost"
+						className="gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 font-inter text-sm border border-gray-200 hover:border-gray-300"
+					>
+						<a
+							href="https://aiplan-nl.translate.goog/openbrief?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2"
 						>
-							<Link
-								to="/"
-								className="flex items-center gap-2"
-							>
-								<span className="hidden min-[426px]:inline">Zie ons Deltaplan</span>
-								<span className="min-[426px]:hidden">Ons Deltaplan</span>
-								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-								</svg>
-							</Link>
-						</Button>
-						<Button
-							asChild
-							variant="ghost"
-							className="gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 font-inter text-sm border border-gray-200 hover:border-gray-300"
-						>
-							<a
-								href="https://aiplan-nl.translate.goog/opinie?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center gap-2"
-							>
-								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
-									<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
-									<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
-								</svg>
-								EN
-							</a>
-						</Button>
-					</div>
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+								<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+								<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
+							</svg>
+							EN
+						</a>
+					</Button>
 				</Header>
 
 				<div className="space-y-12">
@@ -136,7 +119,7 @@ const Article = () => {
 									className="gap-2 px-6 py-3 rounded-md text-white bg-[#315FD8] hover:bg-[#1e3a8a] transition-all duration-200 font-inter text-base font-medium shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
 								>
 									<Link
-										to="/"
+										to="/ons-voorstel"
 										className="flex items-center gap-2"
 									>
 										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
