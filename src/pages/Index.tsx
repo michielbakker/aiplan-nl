@@ -158,8 +158,8 @@ const Index = () => {
 								{/* Michiel Bakker */}
 								<div className="flex items-start gap-4">
 									<img 
-										src="/michiel-new.jpg" 
-										alt="Michiel Bakker" 
+										src="/lovable-uploads/75569a3d-7c14-4819-9b8c-6f7dc87dc622.png" 
+										alt="Michiel Bakker"
 										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
 									/>
 									<div className="flex-1">
