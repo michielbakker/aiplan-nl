@@ -142,8 +142,13 @@ const Index = () => {
 				<div className="mb-20">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl sm:text-4xl font-[500] text-gray-900 font-space-grotesk mb-6 mt-0">
-							Over ons
+							Ons team
 						</h2>
+						<div className="max-w-4xl mx-auto">
+							<p className="text-base sm:text-lg text-gray-700 font-inter leading-relaxed">
+								AI Plan is een initiatief van Jelle Prins en Michiel Bakker, en wordt inmiddels ondersteund door een vast team en een brede groep adviseurs. Samen brengen we technische, maatschappelijke en economische expertise samen om de AI-transitie in Nederland vorm te geven.
+							</p>
+						</div>
 					</div>
 
 					<div className="bg-white rounded-xl shadow-sm border border-gray-200/50 p-8">
