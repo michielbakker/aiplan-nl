@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 interface HeaderProps {
 	className?: string;
 	children?: React.ReactNode;
+	hideHomeBtn?: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ className = '', children }) => {
+const Header: React.FC<HeaderProps> = ({ className = '', hideHomeBtn, children }) => {
 	return (
 		<>
 			<header className={`flex justify-between items-start mb-6 ${className}`}>
@@ -21,6 +22,19 @@ const Header: React.FC<HeaderProps> = ({ className = '', children }) => {
 				</Link>
 
 				<div className="flex items-center gap-4">
+					{ !hideHomeBtn && <Button
+						asChild
+						variant="ghost"
+						size="sm"
+						className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200"
+					>
+						<Link to="/" className="flex items-center">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+								<polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+							</svg>
+						</Link>
+					</Button> }
 					{children}
 				</div>
 			</header >

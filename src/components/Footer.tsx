@@ -8,7 +8,7 @@ const Footer = () => {
         Met dank aan <a href="https://verveagency.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Verve</a> voor het ontwerpen van onze huisstjil en branding.
       </p>
       <p className="mb-2">
-        En aan Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins en Wouter van Noort voor hun inhoudelijke bijdragen en hulp bij het AI Plan.
+        En aan Onno Eric Blom, Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins en Wouter van Noort voor hun inhoudelijke bijdragen en hulp bij het AI Plan.
       </p>
     </footer>
   );

@@ -146,6 +146,23 @@ const Article = () => {
 										Laat je e-mail achter
 									</a>
 								</Button>
+								<Button
+									asChild
+									variant="outline"
+									className="gap-2 px-6 py-3 rounded-md border-gray-300 hover:bg-gray-50 transition-all duration-200 font-inter text-base font-medium flex-shrink-0"
+								>
+									<Link
+										to="/"
+										className="flex items-center gap-2 whitespace-nowrap"
+									>
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+											<path d="M9,15 L15,9" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+											<path d="M15,15 L15,9 L9,9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+										</svg>
+										Meer over ons
+									</Link>
+								</Button>
 							</div>
 						</div>
 					</div>

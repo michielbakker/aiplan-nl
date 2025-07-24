@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import NewsletterCTA from '@/components/NewsletterCTA';
@@ -8,7 +7,7 @@ const Index = () => {
 	return (
 		<div className="bg-[#F8F9FA] min-h-screen">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-				<Header>
+				<Header hideHomeBtn={true}>
 					<Button
 						asChild
 						variant="ghost"
@@ -47,10 +46,8 @@ const Index = () => {
 					</div>
 				</div>
 
-				{/* Visual separator */}
 				<div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-16"></div>
-
-				{/* Our Work Section */}
+				
 				<div className="mb-20">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl sm:text-4xl font-[500] text-gray-900 font-space-grotesk mb-6 mt-0">
@@ -139,9 +136,165 @@ const Index = () => {
 					</div>
 				</div>
 
+				<div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-16"></div>
+
+				{/* Over Ons Section */}
+				<div className="mb-20">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl sm:text-4xl font-[500] text-gray-900 font-space-grotesk mb-6 mt-0">
+							Over ons
+						</h2>
+					</div>
+
+					<div className="bg-white rounded-xl shadow-sm border border-gray-200/50 p-8">
+						<div className="space-y-8">
+							{/* Main team */}
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+								{/* Michiel Bakker */}
+								<div className="flex items-start gap-4">
+									<img 
+										src="/michiel.jpg" 
+										alt="Michiel Bakker" 
+										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+									/>
+									<div className="flex-1">
+										<div className="flex items-center gap-2 mb-1">
+											<span className="font-bold text-gray-900">Michiel Bakker</span>
+											<a href="https://linkedin.com/in/michielbakker" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+												</svg>
+											</a>
+											<a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+												</svg>
+											</a>
+										</div>
+										<p className="text-gray-700 font-inter leading-relaxed text-sm">
+											Assistant Professor aan het Massachusetts Institute of Technology (MIT).
+										</p>
+									</div>
+								</div>
+
+								{/* Jelle Prins */}
+								<div className="flex items-start gap-4">
+									<img 
+										src="/jelle.jpg" 
+										alt="Jelle Prins" 
+										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+									/>
+									<div className="flex-1">
+										<div className="flex items-center gap-2 mb-1">
+											<span className="font-bold text-gray-900">Jelle Prins</span>
+											<a href="https://linkedin.com/in/jelleprins" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+												</svg>
+											</a>
+											<a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+												</svg>
+											</a>
+										</div>
+										<p className="text-gray-700 font-inter leading-relaxed text-sm">
+											Medeoprichter van AI-bedrijf Cradle en was verantwoordelijk voor de eerste apps van Uber, Booking.com en Catawiki.
+										</p>
+									</div>
+								</div>
+
+								{/* Renée Frissen */}
+								<div className="flex items-start gap-4">
+									<img 
+										src="/renee.png" 
+										alt="Renée Frissen" 
+										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+									/>
+									<div className="flex-1">
+										<div className="flex items-center gap-2 mb-1">
+											<span className="font-bold text-gray-900">Renée Frissen</span>
+											<a href="https://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+												</svg>
+											</a>
+											<a href="https://www.openembassy.nl/en/our-team/renee-frissen/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+												</svg>
+											</a>
+										</div>
+										<p className="text-gray-700 font-inter leading-relaxed text-sm">
+											Oprichter en CEO van OpenEmbassy, en medeoprichter van de 10% Club.
+										</p>
+									</div>
+								</div>
+
+								{/* Stan van Baarsen */}
+								<div className="flex items-start gap-4">
+									<img 
+										src="/stan.jpg" 
+										alt="Stan van Baarsen" 
+										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+									/>
+									<div className="flex-1">
+										<div className="flex items-center gap-2 mb-1">
+											<span className="font-bold text-gray-900">Stan van Baarsen</span>
+											<a href="https://linkedin.com/in/stanvanbaarsen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+												</svg>
+											</a>
+											<a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+												</svg>
+											</a>
+										</div>
+										<p className="text-gray-700 font-inter leading-relaxed text-sm">
+											Masterstudent Technology Policy aan de University of Cambridge.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							{/* Separator */}
+							<div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+
+							{/* Contributors */}
+							<div>
+								<h3 className="text-lg font-bold text-gray-900 font-space-grotesk mb-3">
+									Met dank aan
+								</h3>
+								<p className="text-gray-700 font-inter leading-relaxed mb-4">
+									Wij hebben uitgebreide inhoudelijke bijdragen en hulp gekregen van onder andere Onno Eric Blom, Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins en Wouter van Noort.
+								</p>
+								<p className="text-gray-700 font-inter leading-relaxed">
+									En dank aan <a href="https://verveagency.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 underline transition-colors">Verve</a> voor het ontwerpen van onze huisstijl en branding.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<NewsletterCTA />
 
-				<Footer />
+				{/* Remove Footer */}
 			</div>
 		</div>
 	);
