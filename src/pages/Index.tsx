@@ -292,7 +292,7 @@ const Index = () => {
 									Met dank aan
 								</h3>
 								<p className="text-gray-700 font-inter leading-relaxed mb-4">
-									Wij hebben uitgebreide inhoudelijke bijdragen en hulp gekregen van onder andere Onno Eric Blom, Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins en Wouter van Noort.
+									Wij hebben uitgebreide inhoudelijke bijdragen en hulp gekregen van onder andere Onno Eric Blom, Durk Kingma, Miles Brundage, Nick Lenten, Peter van Sabben, Rick Lamers, Rick Pastoor, Rogier Klimbie, Salar al Khafaji, Sebastiaan Vaessen, Teddy Collins, Wouter van Noort, Anke Huiskes en Alexander Klöpping.
 								</p>
 								<p className="text-gray-700 font-inter leading-relaxed">
 									En dank aan <a href="https://verveagency.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 underline transition-colors">Verve</a> voor het ontwerpen van onze huisstijl en branding.
