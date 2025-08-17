@@ -60,7 +60,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
   }, [content]);
 
   const handleLearnMoreClick = () => {
-    navigate(`/plan/${number}`);
+    navigate(`/ons-voorstel/${number}`);
   };
 
   const { backgroundColor, buttonBgColor, textColor, buttonTextColor } = colorScheme;

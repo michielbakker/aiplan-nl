@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import PlanDetail from "./pages/PlanDetail";
 import Article from "./pages/Article";
 import OnsVoorstel from "./pages/OnsVoorstel";
+import Nadi from "./pages/Nadi";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -22,8 +23,9 @@ const App = () => (
 				<Routes>
 					<Route path="/" element={<Index />} />
 					<Route path="/openbrief" element={<Article />} />
+					<Route path="/nadi" element={<Nadi />} />
 					<Route path="/ons-voorstel" element={<OnsVoorstel />} />
-					<Route path="/plan/:id" element={<PlanDetail />} />
+					<Route path="/ons-voorstel/:id" element={<PlanDetail />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

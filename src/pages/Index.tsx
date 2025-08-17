@@ -56,7 +56,42 @@ const Index = () => {
 					</div>
 
 					<div className="space-y-6">
-						{/* Card 1: Open Brief */}
+						{/* Card 1: NADI Opiniestuk */}
+						<div className="bg-white rounded-xl shadow-sm border border-gray-200/50 p-6 hover:shadow-md transition-shadow duration-200">
+							<div className="flex items-start gap-6">
+								<div className="w-12 h-12 bg-[#315FD8]/10 rounded-full flex items-center justify-center flex-shrink-0">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+									</svg>
+								</div>
+								<div className="flex-1 min-w-0">
+									<div className="mb-3">
+										<h3 className="text-xl font-bold text-gray-900 font-space-grotesk mb-1">
+											Een Nederlandse DARPA: het einde van ‘doe maar gewoon’
+										</h3>
+										<p className="text-sm text-gray-500 font-inter">
+											18 augustus 2025
+										</p>
+									</div>
+									<p className="text-gray-600 font-inter mb-4 leading-relaxed">
+									Een opiniestuk over NADI, het Nationaal Agentschap voor Disruptieve Innovatie. We laten zien waarom Nederland grootser moet durven denken, wat we kunnen leren van DARPA en ARIA, en welke valkuilen we moeten vermijden.
+									</p>
+									<Button
+										asChild
+										className="gap-2 px-6 py-3 rounded-lg text-white bg-[#315FD8] hover:bg-[#1e3a8a] font-inter font-medium shadow-sm hover:shadow-md transition-all duration-200"
+									>
+										<Link to="/nadi" className="flex items-center gap-2">
+											<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5 12h14m-7-7l7 7-7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+											</svg>
+											Lees het opiniestuk
+										</Link>
+									</Button>
+								</div>
+							</div>
+						</div>
+
+						{/* Card 2: Open Brief */}
 						<div className="bg-white rounded-xl shadow-sm border border-gray-200/50 p-6 hover:shadow-md transition-shadow duration-200">
 							<div className="flex items-start gap-6">
 								<div className="w-12 h-12 bg-[#FF3030]/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -95,7 +130,7 @@ const Index = () => {
 							</div>
 						</div>
 
-						{/* Card 2: AI Deltaplan */}
+						{/* Card 3: AI Deltaplan */}
 						<div className="bg-white rounded-xl shadow-sm border border-gray-200/50 p-6 hover:shadow-md transition-shadow duration-200">
 							<div className="flex items-start gap-6">
 								<div className="w-12 h-12 bg-[#315FD8]/10 rounded-full flex items-center justify-center flex-shrink-0">

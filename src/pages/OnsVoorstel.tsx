@@ -3,6 +3,7 @@ import IntroSection from '@/components/IntroSection';
 import DeltaPlanIntro from '@/components/DeltaPlanIntro';
 import PlanItemsList from '@/components/PlanItemsList';
 import ContributionCTA from '@/components/ContributionCTA';
+import AboutUs from '@/components/AboutUs';
 import Footer from '@/components/Footer';
 import TulipIcon from '@/components/TulipIcon';
 import { Button } from '@/components/ui/button';
@@ -99,6 +100,8 @@ const OnsVoorstel = () => {
 					</div>
 
 					<ContributionCTA />
+
+					<AboutUs />
 
 					<Footer />
 				</div>

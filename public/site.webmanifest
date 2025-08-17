@@ -1,10 +1,26 @@
 {
 	"name": "AI Plan NL",
-	"short_name": "AI Plan NL",
+	"short_name": "AI Plan",
+	"description": "AI Plan is een onafhankelijke stichting die zich inzet voor een toekomstbestendig AI-beleid. Wij werken aan een strategische, democratisch verankerde AI-aanpak die past bij onze waarden en onze economie versterkt.",
 	"icons": [
 		{
-			"src": "/icon192x192.png",
-			"sizes": "192x192",
+			"src": "/icon16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon128x128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon180x180.png",
+			"sizes": "180x180",
 			"type": "image/png"
 		},
 		{
@@ -13,7 +29,11 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
-	"display": "standalone"
+	"theme_color": "#FF3030",
+	"background_color": "#F8F9FA",
+	"display": "standalone",
+	"start_url": "/",
+	"scope": "/",
+	"lang": "nl",
+	"orientation": "portrait-primary"
 }
