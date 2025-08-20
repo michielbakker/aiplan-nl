@@ -190,7 +190,7 @@ const Nadi = () => {
 							</p>
 
 							<p className="text-base leading-relaxed">
-								Het volgende kabinet moet zich realiseren dat innovatie essentieel is voor economische groei. Denk daarbij groot: een toekomst waarin landbouw de natuur versterkt in plaats van uitput, of een land waar energie bijna gratis is. Definieer dergelijke Nederlandse missies die even ambitieus als urgent zijn, en reserveer hiervoor 200 miljoen euro per jaar gedurende de komende 10 jaar. Mogelijk is dit het snelst te realiseren als een nieuwe opzet voor het Nationale Groeifonds, of als eerste investering van één nieuwe Nationale investeringsagenda. Maar zorg dat de opzet anders is dan de andere innovatie en financieringsclubs die we al hebben, met een wezenlijk andere leiding en complete autonomie.
+								Het volgende kabinet moet zich realiseren dat innovatie essentieel is voor economische groei. Denk daarbij groot: een toekomst waarin landbouw de natuur versterkt in plaats van uitput, of een land waar energie bijna gratis is. Definieer dergelijke Nederlandse missies die even ambitieus als urgent zijn, en reserveer hiervoor 200 miljoen euro per jaar gedurende de komende 10 jaar. Mogelijk is dit het snelst te realiseren als een nieuwe opzet voor het Nationale Groeifonds, of als eerste investering van één nieuwe Nationale investeringsagenda. <i>Maar zorg dat de opzet anders is dan de andere innovatie en financieringsclubs die we al hebben, met een wezenlijk andere leiding en complete autonomie.</i>
 							</p>
 
 							<p className="text-base leading-relaxed">
