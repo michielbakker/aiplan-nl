@@ -114,7 +114,7 @@ const Nadi = () => {
 							</h3>
 
 							<p className="text-base leading-relaxed">
-								Nooit kwam verandering van mensen met een "doe maar gewoon, dan doe je al gek genoeg" houding. De succesvolle projecten bij DARPA, ARIA en GRIND resulteren niet in een enkel product of bedrijf, maar in een geheel nieuwe industrie. Het leiderschap wordt afgerekend op hoe groot hun ideeën zijn, niet op de haalbaarheid. We moeten extreem ambitieus zijn. De vraag is niet of iets 10% beter kan, maar hoe het 10x beter kan. Klinkt het realistisch? Dan mikken we te laag.
+								Nooit kwam verandering van mensen met een "doe maar gewoon, dan doe je al gek genoeg" houding. De succesvolle projecten bij DARPA, ARIA en SPRIND resulteren niet in een enkel product of bedrijf, maar in een geheel nieuwe industrie. Het leiderschap wordt afgerekend op hoe groot hun ideeën zijn, niet op de haalbaarheid. We moeten extreem ambitieus zijn. De vraag is niet of iets 10% beter kan, maar hoe het 10x beter kan. Klinkt het realistisch? Dan mikken we te laag.
 							</p>
 
 							<h3 className="text-xl font-bold text-black font-space-grotesk mt-6 mb-3">
