@@ -126,7 +126,7 @@ const Nadi = () => {
 							</p>
 
 							<p className="text-base leading-relaxed">
-								Bij de zeer ambitieuze NADI projecten, waarbij veel meer onzekerheden zijn, moet het reflex niet zijn om de risico's in te perken, maar om mislukkingen te omarmen. Een ontploffende raket moet resulteren in luid applaus. Zonder spectaculaire mislukkingen, ook geen spectaculaire successen. DARPA viert mislukkingen, en gaat ervan uit dat 7 van de 10 projecten niet al hun doelstellingen halen. Dat is OK, zolang een deel van de projecten de wereld verandert.
+								Bij de zeer ambitieuze NADI projecten, waarbij veel meer onzekerheden zijn, moet het reflex niet zijn om de risico's in te perken, maar om mislukkingen te omarmen. Een ontploffende raket moet resulteren in luid applaus. Zonder spectaculaire mislukkingen, ook geen spectaculaire successen. DARPA viert mislukkingen, en gaat ervan uit dat 9 van de 10 projecten niet al hun doelstellingen halen. Dat is OK, zolang de projecten maar ambitieus genoeg zijn om toch de wereld te veranderen.
 							</p>
 
 							<p className="text-base leading-relaxed">
