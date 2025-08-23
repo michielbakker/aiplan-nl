@@ -126,11 +126,11 @@ const Nadi = () => {
 							</p>
 
 							<p className="text-base leading-relaxed">
-								Bij de zeer ambitieuze NADI projecten, waarbij veel meer onzekerheden zijn, moet het reflex niet zijn om de risico's in te perken, maar om mislukkingen te omarmen. Een ontploffende raket moet resulteren in luid applaus. Zonder spectaculaire mislukkingen, ook geen spectaculaire successen. ARIA viert mislukkingen, en gaat ervan uit dat 7 van de 10 projecten falen. Dat is OK, zolang als 3 projecten de wereld veranderen.
+								Bij de zeer ambitieuze NADI projecten, waarbij veel meer onzekerheden zijn, moet het reflex niet zijn om de risico's in te perken, maar om mislukkingen te omarmen. Een ontploffende raket moet resulteren in luid applaus. Zonder spectaculaire mislukkingen, ook geen spectaculaire successen. DARPA viert mislukkingen, en gaat ervan uit dat 7 van de 10 projecten niet al hun doelstellingen halen. Dat is OK, zolang een deel van de projecten de wereld verandert.
 							</p>
 
 							<p className="text-base leading-relaxed">
-								Bovendien, als je ambitie hoog genoeg ligt, dan hebben ook gefaalde projecten een grote positieve impact op de industrie door de lessen die worden geleerd. Bij de eerste zelfrijdendeauto-race in de woestijn haalde niemand de finish. En het lukte ARIA nog niet om efficiënt biobrandstoffen op basis van algen te ontwikkelen, maar ze hielpen met dit programma wel het veld vooruit rondom productie van eiwitten voor voeding en nieuwe medicijnen.
+								Bovendien, als je ambitie hoog genoeg ligt, dan hebben ook gefaalde projecten een grote positieve impact op de industrie door de lessen die worden geleerd. Bij de eerste zelfrijdendeauto-race in de woestijn haalde niemand de finish. En het lukte DARPA nog niet om efficiënt biobrandstoffen op basis van algen te ontwikkelen, maar ze hielpen met dit programma wel het veld vooruit rondom productie van eiwitten voor voeding en nieuwe medicijnen.
 							</p>
 
 							<p className="text-base leading-relaxed">
