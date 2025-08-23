@@ -70,7 +70,7 @@ const Nadi = () => {
 							</h2>
 
 							<p className="text-base leading-relaxed">
-								DARPA inspireerde al vergelijkbare organisaties in o.a. Duitsland (SPRIND), Engeland (ARIA) en vele andere landen. Zij keken goed naar wat DARPA zo'n succes heeft gemaakt, en dat geheim zit niet in het geld. Het budget van deze organisaties, zoals ARIA met $200 miljoen per jaar en DARPA met $4 miljard per jaar, is bescheiden vergeleken met wat Big Tech uitgeeft (Amazon $88 miljard, Google $49 miljard, Facebook $44 miljard).
+								DARPA inspireerde al vergelijkbare organisaties in o.a. Duitsland (SPRIND), Engeland (ARIA) en vele andere landen. Zij keken goed naar wat DARPA zo'n succes heeft gemaakt, en dat geheim zit niet in het geld. Het budget van deze organisaties, zoals ARIA met $200 miljoen per jaar en DARPA met $4 miljard per jaar, is bescheiden vergeleken met wat Big Tech uitgeeft (Amazon 88 miljard, Google 49 miljard, Facebook 44 miljard).
 							</p>
 
 							<p className="text-base leading-relaxed">
@@ -170,7 +170,7 @@ const Nadi = () => {
 							</p>
 
 							<p className="text-base leading-relaxed">
-								Geen vinger in de pap voor Invest-NL, TNO en elk ministerie. ARIA is zelfs vrijgesteld van de Wet Openbaarheid van Bestuur (WOB) in de UK. Het toezicht is beperkt tot dat wat nodig is om te voorkomen dat belastinggeld verdwijnt.
+								Geen vinger in de pap voor Invest-NL, TNO en elk ministerie. ARIA is zelfs vrijgesteld van de Wet Open Overheid (Woo) in de UK. Het toezicht is beperkt tot dat wat nodig is om te voorkomen dat belastinggeld verdwijnt.
 							</p>
 
 							<h3 className="text-xl font-bold text-black font-space-grotesk mt-6 mb-3">
