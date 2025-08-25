@@ -40,7 +40,7 @@ const Index = () => {
 								AI verandert alles. Maar Nederland is daar nog niet op voorbereid.
 							</p>
 							<p className="text-base sm:text-xl text-gray-700 font-inter leading-relaxed">
-								AI Plan is een onafhankelijk initiatief die zich inzet voor een toekomstbestendig AI-beleid. Wij werken aan een strategische, democratisch verankerde AI-aanpak die past bij onze waarden en onze economie versterkt.
+								AI Plan is een onafhankelijk initiatief dat zich inzet voor een toekomstbestendig AI-beleid. Wij werken aan een strategische, democratisch verankerde AI-aanpak die past bij onze waarden en onze economie versterkt.
 							</p>
 						</div>
 					</div>
