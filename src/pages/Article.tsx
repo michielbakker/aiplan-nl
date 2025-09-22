@@ -73,38 +73,6 @@ const Article = () => {
 						</div>
 					</div>
 
-					<div className="mt-12 bg-gradient-to-r from-[#FF3333]/5 to-[#FF3333]/10 rounded-xl border border-[#FF3333]/20 px-8 py-6 text-center">
-						<div className="max-w-lg mx-auto space-y-6">
-							<div className="w-16 h-16 bg-[#FF3333]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-								<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#FF3333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-								</svg>
-							</div>
-							<h2 className="text-2xl font-bold text-black font-space-grotesk">
-								Steun deze oproep
-							</h2>
-							<p className="text-gray-700 text-base leading-relaxed">
-								Voeg je stem toe aan onze coalitie van experts die dringt op politieke actie voor AI.
-							</p>
-							<Button
-								asChild
-								className="gap-2 px-8 py-4 rounded-lg text-white bg-[#FF3333] hover:bg-[#d92020] font-inter text-base font-medium shadow-lg"
-							>
-								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSfhnurJFD4Ih2p12JYviasYNMm8JCbSvmMH-B0NhAji-GOtkQ/viewform"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex items-center gap-2"
-								>
-									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-									</svg>
-									Onderteken de oproep
-								</a>
-							</Button>
-						</div>
-					</div>
-
 					<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-sm">
 						<div className="max-w-2xl">
 							<h3 className="text-2xl font-bold mb-4 text-black font-space-grotesk">
