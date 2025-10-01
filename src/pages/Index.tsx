@@ -258,7 +258,7 @@ const Index = () => {
 								{/* Renée Frissen */}
 								<div className="flex items-start gap-4">
 									<img 
-										src="/renee.png" 
+										src="/renee.jpg" 
 										alt="Renée Frissen" 
 										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
 									/>
@@ -289,7 +289,7 @@ const Index = () => {
 								{/* Stan van Baarsen */}
 								<div className="flex items-start gap-4">
 									<img 
-										src="/stan.jpg" 
+										src="/stan.jpg"
 										alt="Stan van Baarsen" 
 										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
 									/>
