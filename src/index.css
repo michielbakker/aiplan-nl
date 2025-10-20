@@ -200,3 +200,34 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
+
+.moonshot-content > * + * {
+  margin-top: 1.75rem;
+}
+
+.moonshot-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.moonshot-content h2 + * {
+  margin-top: 0.75rem !important;
+}
+
+.article-content p {
+  color: #1f2937;
+}
+
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  color: #0f172a;
+}
+
+.article-content a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-color: rgba(29, 78, 216, 0.25);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}

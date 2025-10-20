@@ -47,7 +47,7 @@ const Index = () => {
 				</div>
 
 				<div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-16"></div>
-				
+
 				<div className="mb-20">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl sm:text-4xl font-[500] text-gray-900 font-space-grotesk mb-6 mt-0">
@@ -61,7 +61,7 @@ const Index = () => {
 							<div className="flex items-start gap-6">
 								<div className="w-12 h-12 bg-[#315FD8]/10 rounded-full flex items-center justify-center flex-shrink-0">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+										<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 									</svg>
 								</div>
 								<div className="flex-1 min-w-0">
@@ -74,7 +74,7 @@ const Index = () => {
 										</p>
 									</div>
 									<p className="text-gray-600 font-inter mb-4 leading-relaxed">
-									Een opiniestuk over NADI, het Nationaal Agentschap voor Disruptieve Innovatie. We laten zien waarom Nederland grootser moet durven denken, wat we kunnen leren van DARPA en ARIA, en welke valkuilen we moeten vermijden.
+										Een opiniestuk over NADI, het Nationaal Agentschap voor Disruptieve Innovatie. We laten zien waarom Nederland grootser moet durven denken, wat we kunnen leren van DARPA en ARIA, en welke valkuilen we moeten vermijden.
 									</p>
 									<Button
 										asChild
@@ -96,11 +96,11 @@ const Index = () => {
 							<div className="flex items-start gap-6">
 								<div className="w-12 h-12 bg-[#FF3030]/10 rounded-full flex items-center justify-center flex-shrink-0">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<polyline points="14,2 14,8 20,8" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<line x1="16" y1="13" x2="8" y2="13" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<line x1="16" y1="17" x2="8" y2="17" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<polyline points="10,9 9,9 8,9" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+										<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<polyline points="14,2 14,8 20,8" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<line x1="16" y1="13" x2="8" y2="13" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<line x1="16" y1="17" x2="8" y2="17" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<polyline points="10,9 9,9 8,9" stroke="#FF3030" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 									</svg>
 								</div>
 								<div className="flex-1 min-w-0">
@@ -135,11 +135,11 @@ const Index = () => {
 							<div className="flex items-start gap-6">
 								<div className="w-12 h-12 bg-[#315FD8]/10 rounded-full flex items-center justify-center flex-shrink-0">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<polyline points="14,2 14,8 20,8" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<line x1="16" y1="13" x2="8" y2="13" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<line x1="16" y1="17" x2="8" y2="17" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-										<line x1="10" y1="9" x2="8" y2="9" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+										<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<polyline points="14,2 14,8 20,8" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<line x1="16" y1="13" x2="8" y2="13" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<line x1="16" y1="17" x2="8" y2="17" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+										<line x1="10" y1="9" x2="8" y2="9" stroke="#315FD8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 									</svg>
 								</div>
 								<div className="flex-1 min-w-0">
@@ -192,31 +192,34 @@ const Index = () => {
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 								{/* Michiel Bakker */}
 								<div className="flex items-start gap-4">
-									<img 
-										src="/lovable-uploads/75569a3d-7c14-4819-9b8c-6f7dc87dc622.png" 
-										alt="Michiel Bakker"
-										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-									/>
+									<div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+										<img
+											src="/michiel.png"
+											alt="Michiel Bakker"
+											className="w-full h-full object-cover"
+											style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}
+										/>
+									</div>
 									<div className="flex-1">
 										<div className="flex items-center gap-2 mb-1">
 											<span className="font-bold text-gray-900">Michiel Bakker</span>
 											<a href="https://www.linkedin.com/in/michielbakker1/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 											<a href="https://x.com/bakkermichiel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 											<a href="https://miba.dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
-													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
 												</svg>
 											</a>
 										</div>
@@ -228,24 +231,26 @@ const Index = () => {
 
 								{/* Jelle Prins */}
 								<div className="flex items-start gap-4">
-									<img 
-										src="/jelle.jpg" 
-										alt="Jelle Prins" 
-										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-									/>
+									<div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+										<img
+											src="/jelle.jpg"
+											alt="Jelle Prins"
+											className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+										/>
+									</div>
 									<div className="flex-1">
 										<div className="flex items-center gap-2 mb-1">
 											<span className="font-bold text-gray-900">Jelle Prins</span>
 											<a href="https://linkedin.com/in/jelleprins" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 											<a href="https://x.com/jelleprins" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 										</div>
@@ -257,26 +262,28 @@ const Index = () => {
 
 								{/* Renée Frissen */}
 								<div className="flex items-start gap-4">
-									<img 
-										src="/renee.jpg" 
-										alt="Renée Frissen" 
-										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-									/>
+									<div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+										<img
+											src="/renee.jpg"
+											alt="Renée Frissen"
+											className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+										/>
+									</div>
 									<div className="flex-1">
 										<div className="flex items-center gap-2 mb-1">
 											<span className="font-bold text-gray-900">Renée Frissen</span>
 											<a href="https://linkedin.com/in/reneefrissen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 											<a href="https://www.openembassy.nl/en/our-team/renee-frissen/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
-													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
 												</svg>
 											</a>
 										</div>
@@ -288,26 +295,29 @@ const Index = () => {
 
 								{/* Stan van Baarsen */}
 								<div className="flex items-start gap-4">
-									<img 
-										src="/stan.jpg"
-										alt="Stan van Baarsen" 
-										className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-									/>
+									<div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+										<img
+											src="/stan.jpg"
+											alt="Stan van Baarsen"
+											style={{ transform: 'scale(1.15)', transformOrigin: 'center top' }}
+											className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+										/>
+									</div>
 									<div className="flex-1">
 										<div className="flex items-center gap-2 mb-1">
 											<span className="font-bold text-gray-900">Stan van Baarsen</span>
 											<a href="https://linkedin.com/in/stanvanbaarsen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+													<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+													<circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 												</svg>
 											</a>
 											<a href="https://www.stanvanbaarsen.nl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
 												<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-													<path d="M2 12h20" stroke="currentColor" strokeWidth="2"/>
-													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2"/>
+													<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+													<path d="M2 12h20" stroke="currentColor" strokeWidth="2" />
+													<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" strokeWidth="2" />
 												</svg>
 											</a>
 										</div>
@@ -319,11 +329,13 @@ const Index = () => {
 
 								{/* Onno Eric Blom */}
 								<div className="flex items-start gap-4">
-									<img
-										src="/onno.jpg"
-										alt="Onno Eric Blom"
-										   className="w-16 h-16 rounded-full object-cover flex-shrink-0 scale-x-[-1]"
-									/>
+									<div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+										<img
+											src="/onno.jpg"
+											alt="Onno Eric Blom"
+											className="w-16 h-16 rounded-full object-cover flex-shrink-0 scale-x-[-1]"
+										/>
+									</div>
 									<div className="flex-1">
 										<div className="flex items-center gap-2 mb-1">
 											<span className="font-bold text-gray-900">Onno Eric Blom</span>

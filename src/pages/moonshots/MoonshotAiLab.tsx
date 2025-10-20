@@ -1,0 +1,32 @@
+import MoonshotLayout from '@/components/MoonshotLayout';
+
+const MoonshotAILab = () => {
+	return (
+		<MoonshotLayout
+			title="Een Nationaal AI Lab als motor voor toegepaste en veilige AI"
+			heroEyebrow="Moonshots"
+		>
+			<p>Kunstmatige intelligentie luidt de grootste sociaaleconomische transitie van deze eeuw in, met een impact vergelijkbaar met die van de industriële revolutie. Vrijwel elke sector zal ingrijpend transformeren, terwijl steeds meer van de waarde die onze huidige bedrijven creëren, verschuift naar de AI-software die zij gebruiken om hun kernprocessen uit te voeren. Dat is op zichzelf geen probleem — integendeel, het biedt enorme economische en maatschappelijke kansen. Maar die software wordt nog vrijwel volledig in het buitenland ontwikkeld, en dat brengt fundamentele risico’s met zich mee: een groeiend deel van onze omzet vloeit weg naar buitenlandse technologiebedrijven, en onze toegang tot cruciale systemen kan op ieder moment worden beperkt. Zo komt de concurrentiekracht van Nederlandse bedrijven onder druk te staan.</p>
+			<p>Maar terwijl de grote buitenlandse techbedrijven als OpenAI en Meta honderden miljarden investeren in grootschalige AI-infrastructuur en de continue detailoptimalisaties van hun modellen, ligt de kracht van Nederland juist in het doelgericht toepassen van bestaande technologie op onze kernsectoren. Het verfijnen en aanpassen van open modellen voor specifieke toepassingen vergt aanzienlijk minder rekenkracht, maar kan wel enorme economische en maatschappelijke waarde opleveren. Bovendien biedt dit precies de inhoudelijke uitdagingen die nodig zijn om Nederlands AI-talent aan te trekken en te behouden.</p>
+			<p>Daarom is een nationaal AI-onderzoeks- en innovatielab nodig met een onderzoekskern en commerciële schil, waar fundamenteel en toegepast onderzoek nauw op elkaar aansluiten. Dit lab helpt Nederland de AI-transitie economisch te verzilveren en maatschappelijk te verankeren in strategische sectoren én binnen de overheid.</p>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Kern van het voorstel</h2>
+			<p>Richt een onafhankelijk, publiek-privaat gefinancierd Nationaal AI Lab op dat fungeert als nationaal zwaartepunt voor toegepast AI-onderzoek, talentontwikkeling en maatschappelijke impact. Het lab krijgt vier kerntaken:</p>
+			<ol className="space-y-4 text-slate-700 list-decimal pl-6">
+				<li>Onderzoeken van fundamentele AI-technologie: gericht op het verbeteren van de betrouwbaarheid, veiligheid, architectuur en efficiëntie van AI-systemen, waaronder alignment, energieverbruik en uitlegbaarheid van AI.</li>
+				<li>Toepassen van AI in Nederlandse kernsectoren: fine-tunen en integreren van open source AI-modellen voor belangrijke Nederlandse sectoren zoals logistiek, zorg, hightech, en publieke dienstverlening.</li>
+				<li>Sturen op verantwoorde maatschappelijke impact van AI: adviseren van de overheid over de maatschappelijke, economische en ethische implicaties van AI en bijdragen aan kaders voor verantwoord gebruik, bijvoorbeeld via onderzoek naar herverdelingsvraagstukken of democratische besluitvormingsmethoden die beter aansluiten op de snelheid van technologische ontwikkeling.</li>
+				<li>Versterken van het AI-ecosysteem: aantrekken van toponderzoekers en ondernemers, en stimuleren van spin-offs, sectorlabs en samenwerkingen met externe partners via onder andere een entrepreneur-in-residence-programma.</li>
+			</ol>
+			<p>Het lab opereert onafhankelijk van bestaande instituten, werkt in kleine, wendbare projectteams en hanteert een ondernemende cultuur om snelheid en impact te waarborgen. Op termijn kan dit Nederland in staat stellen om in samenwerking met andere partnerlabs (bijvoorbeeld andere EU-labs) het talent en de rekenkracht te bundelen die nodig zijn om een Europese tegenhanger van de grote internationale AI-spelers te vormen.</p>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Waarom dit lab?</h2>
+			<p>Het ontwikkelen van toonaangevende AI-modellen vergt enorme hoeveelheden rekenkracht, elektriciteit en kapitaal — middelen die geconcentreerd zijn bij een klein aantal mondiale spelers zoals OpenAI, Anthropic en Meta. Maar terwijl die eerste ontwikkelfase (die &gt;90% van de rekenkracht vereist) op een schaal plaatsvindt waar Nederland nog niet mee kan concurreren, ontstaat de grootste maatschappelijke en economische waarde in de fases daarna, wanneer deze modellen worden verfijnd en aangepast voor specifieke toepassingen en publieke diensten. Daar ligt dan ook de potentiële kracht van Nederland: in het vertalen van AI-doorbraken naar rendabele en betrouwbare toepassingen.</p>
+			<p>Een onafhankelijk AI-lab kan die rol vervullen en zo economische, strategische en maatschappelijke waarde creëren: economisch door de adoptie van AI in vitale sectoren te versnellen en nieuwe bedrijven te laten ontstaan; strategisch door Nederland een cruciale positie in belangrijke AI-waardeketens te geven; en maatschappelijk door te fungeren als kenniscentrum voor AI-veiligheid en als adviesorgaan voor beleid rond de maatschappelijke impact van AI.</p>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Uitvoering</h2>
+			<p>De oprichting van het Nationaal AI-Onderzoekslab vraagt om een publiek-private investeringscoalitie met een meerjarige commitment van de overheid, aangevuld met industriepartners tot een budget van circa €150 miljoen per jaar. Naast kapitaal kan het lab worden gesteund met rekenkrachtcapaciteit vanuit de Nederlandse AI-fabrieken.</p>
+			<p>Het instituut krijgt een compacte governance en ondernemende cultuur naar het voorbeeld van imec, het Vlaamse instituut dat wetenschap, ondernemerschap en industrie succesvol weet te verbinden voor chiponderzoek. Het combineert een onderzoekskern met een commerciële schil waarin wendbare teams onderzoeksresultaten vertalen naar toepassingen, pilots en spin-offs samen met bedrijven en universiteiten. Zo kan bijvoorbeeld fundamenteel onderzoek naar efficiëntere AI-architecturen, in samenwerking met medische partners, uitmonden in startups die lokale — en daarmee privacyvriendelijke — AI-oplossingen ontwikkelen voor toepassingen in de zorg.</p>
+			<p>Zo bouwt Nederland een eigen innovatiecentrum voor AI. Niet om de race naar steeds grotere modellen te winnen, maar om er verstandig van te profiteren én koploper te worden in strategische sectoren.</p>
+		</MoonshotLayout>
+	);
+};
+
+export default MoonshotAILab;

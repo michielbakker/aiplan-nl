@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
 	return (
-		<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-sm">
+		<div className="bg-white rounded-lg border border-gray-200/50 p-8 shadow-xl">
 			<div className="max-w-2xl">
 				<h3 className="text-2xl font-bold mb-4 text-black font-space-grotesk">
 					Over ons
@@ -18,7 +18,7 @@ const AboutUs = () => {
 					>
 						<Link
 							to="/ons-voorstel"
-							className="flex items-center gap-2"
+							className="flex items-center gap-2  !text-white"
 						>
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

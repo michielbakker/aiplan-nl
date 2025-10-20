@@ -5,14 +5,14 @@ import { Github } from 'lucide-react';
 
 const ContributionCTA = () => {
 	return (
-		<div className="my-10 bg-[#315FD8] px-8 py-8 max-md:px-6">
+		<div className="bg-[#315FD8] px-8 py-8 max-md:px-6 rounded-3xl shadow-lg shadow-slate-900/10">
 			<div className="flex flex-col sm:flex-row items-center justify-between gap-6">
 				<div className="flex-1 text-center sm:text-left">
 					<h3 className="text-xl font-semibold text-white mb-2 font-space-grotesk">
 						Schrijf zelf mee via onze GitHub
 					</h3>
 					<p className="text-blue-100 text-sm">
-						Laat suggesties achter voor de inhoud van het deltaplan.
+						Laat suggesties achter voor de inhoud van het Deltaplan.
 					</p>
 				</div>
 				<Button
