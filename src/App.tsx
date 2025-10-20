@@ -12,7 +12,7 @@ import Nadi from "./pages/Nadi";
 import MoonshotNadi from "./pages/moonshots/MoonshotNadi";
 import MoonshotRoboticsLab from "./pages/moonshots/MoonshotRoboticsLab";
 import MoonshotAiLab from "./pages/moonshots/MoonshotAiLab";
-import MoonshotBiofoundry from "./pages/moonshots/MoonshotBiofoundry";
+import MoonshotDataFoundries from "./pages/moonshots/MoonshotDataFoundries";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -31,7 +31,7 @@ const App = () => (
 					<Route path="/moonshots/nadi" element={<MoonshotNadi />} />
 					<Route path="/moonshots/robotics-lab" element={<MoonshotRoboticsLab />} />
 					<Route path="/moonshots/ai-lab" element={<MoonshotAiLab />} />
-					<Route path="/moonshots/biofoundry" element={<MoonshotBiofoundry />} />
+					<Route path="/moonshots/data-foundries" element={<MoonshotDataFoundries />} />
 					<Route path="/ons-voorstel" element={<OnsVoorstel />} />
 					<Route path="/ons-voorstel/:id" element={<PlanDetail />} />
 					<Route path="*" element={<NotFound />} />

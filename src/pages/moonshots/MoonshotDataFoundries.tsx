@@ -1,0 +1,27 @@
+import MoonshotLayout from '@/components/MoonshotLayout';
+
+const MoonshotDataFoundries = () => {
+	return (
+		<MoonshotLayout
+			title="Nationale Data Foundries als fundament voor sectorale AI-innovatie "
+			heroEyebrow="Moonshots"
+		>
+			<p>Data vormt de basis voor elke vorm van kunstmatige intelligentie, maar in veel van onze belangrijkste sectoren ontbreekt het aan voldoende, goed toegankelijke en gestandaardiseerde gegevens. Waar modellen als ChatGPT en Google Gemini kunnen worden getraind op vrijwel het hele internet, is dat voor domeinen waarin Nederland juist kan uitblinken — zoals biotechnologie, chemie, klimaat en zorg — vrijwel onmogelijk. Het verzamelen van zulke hoogwaardige, domeinspecifieke data is kostbaar, tijdrovend en vaak juridisch complex, waardoor het voor startups en bedrijven buiten bereik blijft en veel bedrijven met een hoge maatschappelijke impact nooit van de grond komen.</p>
+			<p>Als er landelijke organisaties zouden bestaan die zich structureel richten op het verzamelen, standaardiseren en beschikbaar stellen van datasets voor onze sleutel­sectoren, zou dat Nederland een ongekende wereldwijde innovatievoorsprong kunnen geven. Dergelijke infrastructuur zou niet alleen de drempel voor nieuwe AI-startups drastisch verlagen, maar ook een explosie aan innovatie mogelijk maken in industrie, wetenschap en publieke dienstverlening. De nationale Data Foundries vormen die ontbrekende schakel. Door hoogwaardige datasets te ontwikkelen en toegankelijk te maken via licenties en partnerschappen, neemt het data-belemmeringen weg om AI-innovatie in strategische sectoren structureel te versnellen.</p>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Kern van het voorstel</h2>
+			<p>Richt onafhankelijke, publiek-privaat gefinancierde Data Foundries op die zich elk concentreren op één kernsector. Elke foundry ontwikkelt hoogwaardige datasets in domeinen waar de behoefte het grootst is, zoals biotechnologie, medische technologie, robotica, materiaalkunde, klimaat, industriële processen, cybersecurity en zelfrijdende voertuigen. De Foundries vervullen twee hoofdrollen:</p>
+			<ol className="space-y-4 text-slate-700 list-decimal pl-6">
+				<li>Hoogwaardige datasets genereren. Het systematisch verzamelen en genereren van data van hoge kwaliteit, vaak in samenwerking met bedrijven en kennisinstellingen. Er worden bijvoorbeeld geautomatiseerde biomedische experimenten uitgevoerd, materiaalonderzoek gedaan of productieprocessen op grote schaal geanalyseerd. Hiermee kunnen nieuwe geneesmiddelen, circulaire materialen en efficiëntere industriële processen sneller en met meer zekerheid worden ontdekt en ontwikkeld.</li>
+				<li>Valoriseren van innovatie. De Foundries fungeren als open infrastructuur waar bedrijven, onderzoekers en start-ups data en faciliteiten benutten om nieuwe toepassingen te ontwikkelen. Via licenties, contractonderzoek en spin-offs wordt deze innovatie direct omgezet in economische en maatschappelijke waarde.</li>
+			</ol>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Waarom centrale Data Foundries?</h2>
+			<p>In veel van de sectoren waarin Nederland uitblinkt blijft AI-innovatie achter doordat cruciale datasets versnipperd, onvolledig of juridisch moeilijk te delen zijn. In de zorg wordt waardevolle data over patiënten en behandelingen nauwelijks gekoppeld. In de maakindustrie liggen productiedata verspreid over talloze bedrijven en machines. En in de ontwikkeling van zelfrijdende voertuigen is het vrijwel onmogelijk voor nieuwe startups om individueel miljarden datapunten te verzamelen over Nederlandse wegen en verkeer, terwijl één gezamenlijke infrastructuur veel veiliger, goedkoper en uitgebreider zou zijn. Bedrijven moeten nu elk afzonderlijk enorme investeringen doen om data te genereren, wat structurele barrières voor innovatie creëert en veel nieuwe bedrijven ontmoedigt.</p>
+			<p>Een voorbeeld van hoe de Foundries deze barrières kunnen verlagen, is in de biotechnologie: daar willen onderzoekers AI-modellen trainen die kunnen voorspellen hoe cellen of moleculen zich gedragen, zodat nieuwe medicijnen, duurzame materialen en voedselinnovaties vele malen sneller ontwikkeld kunnen worden. Een biotech-foundry maakt dit soort modellen — die enorme, kostbare datasets vereisen — mogelijk door in samenwerking met bedrijven en kennisinstellingen grootschalige, geautomatiseerde experimenten en dataverzameling te organiseren in een gedeeld biotech-lab.</p>
+			<h2 className="font-space-grotesk text-2xl font-semibold text-slate-900">Uitvoering</h2>
+			<p>De Data Foundries worden opgezet met ondernemende governance, gefinancierd door overheid, kennisinstellingen en industrie. Met een jaarlijks budget van circa €80–100 miljoen kan het gericht investeren in datageneratie, rekenkracht en talent. De focus ligt expliciet op wendbaarheid: regelmatig wordt geëvalueerd welke sectoren en dataprojecten de hoogste maatschappelijke en economische waarde bieden, zodat middelen steeds gericht worden ingezet waar ze het meest effect hebben.</p>
+			<p>Zo vormen deze foundries het fundament onder een toekomst waarin data steeds minder een drempel vormt, maar juist een katalysator wordt voor onze innovatie, groei en maatschappelijke vooruitgang.</p>
+		</MoonshotLayout>
+	);
+};
+
+export default MoonshotDataFoundries;

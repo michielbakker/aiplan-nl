@@ -12,7 +12,7 @@ interface MoonshotLayoutProps {
 const MoonshotLayout = ({ title, description = '', heroEyebrow = 'Moonshot', children }: MoonshotLayoutProps) => {
 	return (
 		<div className="min-h-screen bg-gradient-to-b from-slate-100 via-white to-white">
-			<div className="relative mx-auto max-w-4xl px-6 pb-16 pt-6 lg:px-8">
+			<div className="relative mx-auto max-w-4xl px-4 pb-16 pt-6 lg:px-8">
 				<div className="pointer-events-none absolute inset-x-6 top-32 h-72 rounded-3xl bg-gradient-to-r from-fuchsia-100 via-slate-50 to-sky-100 opacity-60 blur-3xl" />
 
 				<Header />
@@ -22,7 +22,7 @@ const MoonshotLayout = ({ title, description = '', heroEyebrow = 'Moonshot', chi
 						<div className="border-b border-slate-200/80 bg-slate-50/70 px-8 py-6">
 							<span className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">{heroEyebrow}</span>
 						</div>
-						<div className="px-8 pb-12 pt-8 md:px-12 md:pt-10">
+						<div className="px-6 pb-12 pt-8 md:px-12 md:pt-10">
 							<h1 className="font-space-grotesk text-3xl font-bold leading-tight text-slate-900 md:text-4xl">{title}</h1>
 							{description && (
 								<p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl">
