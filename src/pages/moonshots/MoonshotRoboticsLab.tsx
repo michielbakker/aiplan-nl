@@ -4,7 +4,7 @@ const MoonshotRoboticsLab = () => {
 	return (
 		<MoonshotLayout
 			title="Een Foundational Robotics Lab als landelijk zwaartepunt voor fysieke AI"
-			heroEyebrow="Moonshots"
+			heroEyebrow="Robotics Lab Moonshot"
 		>
 			<p>Robotica-ontwikkelingen zijn door de recente AI-innovaties drastisch versneld. Robots kunnen in toenemende mate zelfstandig waarnemen, redeneren en handelen. Deze ontwikkeling vormt een cruciale productiviteitsboost in onze vergrijzende samenleving, omdat fysieke arbeid straks niet langer de beperkende factor voor onze welvaart hoeft te zijn: robots kunnen arbeidstekorten verlichten, emancipatie versnellen, en de productiviteit in de zorg, de bouw en vele andere industrieën structureel verhogen. Europa beschikt bovendien over een unieke troef: een innovatieve maakindustrie van wereldklasse, die de ideale basis vormt om een leidende rol te spelen in het tijdperk van fysieke AI.</p>
 			<p>Toch dreigt Nederland deze kans te missen. Zowel de hardware als de AI-modellen die moderne robots aandrijven, zijn grotendeels in buitenlandse handen, waardoor straks bij elke handeling die een robot uitvoert, geld naar China of Amerika vloeit. Zonder een nationaal zwaartepunt blijft robotica een geïmporteerde technologie in plaats van een bron van groei en strategische autonomie. En juist in robotica ligt nog een unieke kans: waar de mondiale AI-race zich inmiddels grotendeels buiten Europa afspeelt, bevindt robotica zich nog in een vroege fase waarin gerichte investeringen Nederland een positie aan de wereldtop kunnen bezorgen.</p>

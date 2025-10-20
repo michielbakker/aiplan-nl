@@ -4,7 +4,7 @@ const MoonshotAILab = () => {
 	return (
 		<MoonshotLayout
 			title="Een Nationaal AI Lab als motor voor toegepaste en veilige AI"
-			heroEyebrow="Moonshots"
+			heroEyebrow="AI Lab Moonshot"
 		>
 			<p>Kunstmatige intelligentie luidt de grootste sociaaleconomische transitie van deze eeuw in, met een impact vergelijkbaar met die van de industriële revolutie. Vrijwel elke sector zal ingrijpend transformeren, terwijl steeds meer van de waarde die onze huidige bedrijven creëren, verschuift naar de AI-software die zij gebruiken om hun kernprocessen uit te voeren. Dat is op zichzelf geen probleem — integendeel, het biedt enorme economische en maatschappelijke kansen. Maar die software wordt nog vrijwel volledig in het buitenland ontwikkeld, en dat brengt fundamentele risico’s met zich mee: een groeiend deel van onze omzet vloeit weg naar buitenlandse technologiebedrijven, en onze toegang tot cruciale systemen kan op ieder moment worden beperkt. Zo komt de concurrentiekracht van Nederlandse bedrijven onder druk te staan.</p>
 			<p>Maar terwijl de grote buitenlandse techbedrijven als OpenAI en Meta honderden miljarden investeren in grootschalige AI-infrastructuur en de continue detailoptimalisaties van hun modellen, ligt de kracht van Nederland juist in het doelgericht toepassen van bestaande technologie op onze kernsectoren. Het verfijnen en aanpassen van open modellen voor specifieke toepassingen vergt aanzienlijk minder rekenkracht, maar kan wel enorme economische en maatschappelijke waarde opleveren. Bovendien biedt dit precies de inhoudelijke uitdagingen die nodig zijn om Nederlands AI-talent aan te trekken en te behouden.</p>

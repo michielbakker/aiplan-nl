@@ -4,7 +4,7 @@ const MoonshotNadi = () => {
 	return (
 		<MoonshotLayout
 			title="Nationaal Agentschap voor Disruptieve Innovatie (NADI)"
-			heroEyebrow="Moonshots"
+			heroEyebrow="Onze visie op NADI"
 		>
 			<p>Nederland heeft een innovatieprobleem dat we niet willen zien. Onze universiteiten staan in de wereldtop, onze onderzoekers publiceren baanbrekende studies en toch blijven we achter als het gaat om het omzetten van kennis naar wereldveranderende doorbraken.</p>
 			<p>Doorbraken die onmisbaar zijn voor het oplossen van de problemen waarmee we te maken hebben. Het stikstofprobleem vraagt om definitieve oplossingen, niet om compromissen. Huizen moeten in weken gebouwd worden, niet in jaren. Ons land moet klimaatbestendig worden voor de volgende eeuw, en een gezonde economie heeft constant innovatie nodig.</p>

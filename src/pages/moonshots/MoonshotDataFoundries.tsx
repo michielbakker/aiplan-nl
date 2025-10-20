@@ -4,7 +4,7 @@ const MoonshotDataFoundries = () => {
 	return (
 		<MoonshotLayout
 			title="Nationale Data Foundries als fundament voor sectorale AI-innovatie "
-			heroEyebrow="Moonshots"
+			heroEyebrow="Data Foundries Moonshot"
 		>
 			<p>Data vormt de basis voor elke vorm van kunstmatige intelligentie, maar in veel van onze belangrijkste sectoren ontbreekt het aan voldoende, goed toegankelijke en gestandaardiseerde gegevens. Waar modellen als ChatGPT en Google Gemini kunnen worden getraind op vrijwel het hele internet, is dat voor domeinen waarin Nederland juist kan uitblinken — zoals biotechnologie, chemie, klimaat en zorg — vrijwel onmogelijk. Het verzamelen van zulke hoogwaardige, domeinspecifieke data is kostbaar, tijdrovend en vaak juridisch complex, waardoor het voor startups en bedrijven buiten bereik blijft en veel bedrijven met een hoge maatschappelijke impact nooit van de grond komen.</p>
 			<p>Als er landelijke organisaties zouden bestaan die zich structureel richten op het verzamelen, standaardiseren en beschikbaar stellen van datasets voor onze sleutel­sectoren, zou dat Nederland een ongekende wereldwijde innovatievoorsprong kunnen geven. Dergelijke infrastructuur zou niet alleen de drempel voor nieuwe AI-startups drastisch verlagen, maar ook een explosie aan innovatie mogelijk maken in industrie, wetenschap en publieke dienstverlening. De nationale Data Foundries vormen die ontbrekende schakel. Door hoogwaardige datasets te ontwikkelen en toegankelijk te maken via licenties en partnerschappen, neemt het data-belemmeringen weg om AI-innovatie in strategische sectoren structureel te versnellen.</p>
