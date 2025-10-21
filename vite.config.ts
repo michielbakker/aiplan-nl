@@ -9,6 +9,9 @@ import { staticRoutePaths } from "./src/router/routes";
 
 const nodeRequire = createRequire(import.meta.url);
 const prerender = nodeRequire("vite-plugin-prerender") as typeof prerenderType;
+const JsDomRenderer = nodeRequire(
+	"@prerenderer/renderer-jsdom"
+) as new (options?: Record<string, unknown>) => any;
 
 export default defineConfig(({ mode, command }) => ({
 	server: {
@@ -23,6 +26,15 @@ export default defineConfig(({ mode, command }) => ({
 			prerender({
 				staticDir: path.resolve(__dirname, "dist"),
 				routes: staticRoutePaths,
+				server: {
+					host: "127.0.0.1",
+					...(process.env.PRERENDER_SERVER_PORT
+						? { port: Number(process.env.PRERENDER_SERVER_PORT) }
+						: {}),
+				},
+				renderer: new JsDomRenderer({
+					runScripts: false,
+				}),
 			}),
 	].filter(Boolean),
 	resolve: {
