@@ -47,7 +47,7 @@ const PlanDetail = () => {
 		<div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'white' }}>
 			<div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-24">
 				<Link to={`/ons-voorstel#plan-item-${itemNumber}`} className="inline-block">
-					<Button variant="ghost" className="flex items-center gap-2 text-white hover:text-white rounded-none bg-[#FF3333] hover:bg-[#d92c2c] transition-colors duration-200">
+					<Button variant="ghost" className="flex items-center gap-2 text-white hover:text-white rounded-none bg-[#315fd8] hover:bg-[#1e4aba] transition-colors duration-200">
 						<ChevronLeft size={16} />
 						<span>Terug naar overzicht</span>
 					</Button>
