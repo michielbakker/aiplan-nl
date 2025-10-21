@@ -3,7 +3,7 @@ import MoonshotLayout from '@/components/MoonshotLayout';
 const MoonshotNadi = () => {
 	return (
 		<MoonshotLayout
-			title="Nationaal Agentschap voor Disruptieve Innovatie (NADI)"
+			title="Een Nederlandse DARPA: het einde van ‘doe maar gewoon’"
 			heroEyebrow="Onze visie op NADI"
 		>
 			<p>Nederland heeft een innovatieprobleem dat we niet willen zien. Onze universiteiten staan in de wereldtop, onze onderzoekers publiceren baanbrekende studies en toch blijven we achter als het gaat om het omzetten van kennis naar wereldveranderende doorbraken.</p>
