@@ -39,7 +39,7 @@ export type RouteComponentKey =
 	| "Nadi"
 	| "MoonshotNadi"
 	| "MoonshotRoboticsLab"
-	| "MoonshotAiLab"
+	| "MoonshotAILab"
 	| "MoonshotDataFoundries"
 	| "OnsVoorstel"
 	| "PlanDetail"
@@ -222,7 +222,7 @@ export const routeDescriptors: RouteDescriptor[] = [
 	},
 	{
 		path: "/moonshots/ai-lab",
-		component: "MoonshotAiLab",
+		component: "MoonshotAILab",
 		metadata: {
 			path: "/moonshots/ai-lab",
 			title: "Moonshot: Nationaal AI Lab | AI Plan NL",
