@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
 	return (
@@ -15,12 +16,15 @@ const AboutUs = () => {
 						asChild
 						className="gap-2 px-6 py-3 rounded-md text-white bg-[#315FD8] hover:bg-[#1e3a8a] transition-all duration-200 font-inter text-base font-medium shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
 					>
-						<a href="/ons-voorstel" className="flex items-center gap-2  !text-white">
+						<Link
+							to="/ons-voorstel"
+							className="flex items-center gap-2  !text-white"
+						>
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 							</svg>
 							Lees ons voorstel
-						</a>
+						</Link>
 					</Button>
 					<Button
 						asChild
@@ -45,14 +49,17 @@ const AboutUs = () => {
 						variant="outline"
 						className="gap-2 px-6 py-3 rounded-md border-gray-300 hover:bg-gray-50 transition-all duration-200 font-inter text-base font-medium flex-shrink-0"
 					>
-						<a href="/" className="flex items-center gap-2 whitespace-nowrap">
+						<Link
+							to="/"
+							className="flex items-center gap-2 whitespace-nowrap"
+						>
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
 								<path d="M9,15 L15,9" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
 								<path d="M15,15 L15,9 L9,9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 							</svg>
 							Meer over ons
-						</a>
+						</Link>
 					</Button>
 				</div>
 			</div>

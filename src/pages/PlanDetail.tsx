@@ -1,4 +1,6 @@
+
 import { useMemo } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, MessageCircle } from 'lucide-react';
@@ -15,12 +17,9 @@ import item8Detail from '../../plan-items/item-8-detail.md?raw';
 import item9Detail from '../../plan-items/item-9-detail.md?raw';
 import item10Detail from '../../plan-items/item-10-detail.md?raw';
 
-type PlanDetailProps = {
-	planId?: number;
-};
-
-const PlanDetail = ({ planId = 1 }: PlanDetailProps) => {
-	const itemNumber = Number.isFinite(planId) ? Math.max(1, Math.min(10, planId)) : 1;
+const PlanDetail = () => {
+	const { id } = useParams<{ id: string }>();
+	const itemNumber = parseInt(id || '1');
 
 	// Map of item details
 	const itemDetails = {
@@ -47,16 +46,12 @@ const PlanDetail = ({ planId = 1 }: PlanDetailProps) => {
 	return (
 		<div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'white' }}>
 			<div className="max-w-6xl mx-auto px-4 sm:px-12 lg:px-24">
-				<Button
-					asChild
-					variant="ghost"
-					className="flex items-center gap-2 text-white hover:text-white rounded-none bg-[#315fd8] hover:bg-[#1e4aba] transition-colors duration-200"
-				>
-					<a href={`/ons-voorstel#plan-item-${itemNumber}`}>
+				<Link to={`/ons-voorstel#plan-item-${itemNumber}`} className="inline-block">
+					<Button variant="ghost" className="flex items-center gap-2 text-white hover:text-white rounded-none bg-[#315fd8] hover:bg-[#1e4aba] transition-colors duration-200">
 						<ChevronLeft size={16} />
 						<span>Terug naar overzicht</span>
-					</a>
-				</Button>
+					</Button>
+				</Link>
 
 				<div className="prose markdown-content text-black font-inter">
 					<ReactMarkdown>

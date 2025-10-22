@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import NewsletterCTA from '@/components/NewsletterCTA';
 
 const Index = () => {
@@ -79,12 +80,12 @@ const Index = () => {
 										asChild
 										className="gap-2 px-6 py-3 rounded-lg text-white bg-[#315FD8] hover:bg-[#1e3a8a] font-inter font-medium shadow-sm hover:shadow-md transition-all duration-200"
 									>
-										<a href="/nadi" className="flex items-center gap-2">
+										<Link to="/nadi" className="flex items-center gap-2">
 											<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M5 12h14m-7-7l7 7-7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 											</svg>
 											Lees het opiniestuk
-										</a>
+										</Link>
 									</Button>
 								</div>
 							</div>
@@ -118,12 +119,12 @@ const Index = () => {
 										asChild
 										className="gap-2 px-6 py-3 rounded-lg text-white bg-[#FF3030] hover:bg-[#d92020] font-inter font-medium shadow-sm hover:shadow-md transition-all duration-200"
 									>
-										<a href="/openbrief" className="flex items-center gap-2">
+										<Link to="/openbrief" className="flex items-center gap-2">
 											<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M5 12h14m-7-7l7 7-7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 											</svg>
 											Lees de brief
-										</a>
+										</Link>
 									</Button>
 								</div>
 							</div>
@@ -157,12 +158,12 @@ const Index = () => {
 										asChild
 										className="gap-2 px-6 py-3 rounded-lg text-white bg-[#315FD8] hover:bg-[#1e3a8a] font-inter font-medium shadow-sm hover:shadow-md transition-all duration-200"
 									>
-										<a href="/ons-voorstel" className="flex items-center gap-2">
+										<Link to="/ons-voorstel" className="flex items-center gap-2">
 											<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M5 12h14m-7-7l7 7-7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 											</svg>
 											Lees het voorstel
-										</a>
+										</Link>
 									</Button>
 								</div>
 							</div>
