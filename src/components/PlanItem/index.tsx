@@ -2,7 +2,6 @@
 import React, { useMemo } from 'react';
 import { Button } from '@/components/ui/button';
 import ReactMarkdown from 'react-markdown';
-import { useNavigate } from 'react-router-dom';
 
 interface ColorScheme {
   backgroundColor: string;
@@ -48,8 +47,6 @@ const extractContentFromMarkdown = (markdown: string) => {
 };
 
 const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => {
-  const navigate = useNavigate();
-  
   const extractedTitle = useMemo(() => {
     const extracted = extractTitleFromMarkdown(content);
     return extracted || `Item ${number}`;
@@ -60,7 +57,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ number, content, colorScheme }) => 
   }, [content]);
 
   const handleLearnMoreClick = () => {
-    navigate(`/ons-voorstel/${number}`);
+    window.location.href = `/ons-voorstel/${number}`;
   };
 
   const { backgroundColor, buttonBgColor, textColor, buttonTextColor } = colorScheme;

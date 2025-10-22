@@ -1,5 +1,3 @@
-import type { RouteProps } from "react-router-dom";
-
 export type PageMetadata = {
 	title: string;
 	description: string;
@@ -52,7 +50,7 @@ export type RouteMetadataResolverContext = {
 };
 
 export type RouteDescriptor = {
-	path: RouteProps["path"];
+	path?: string;
 	component: RouteComponentKey;
 	prerender?: boolean;
 	prerenderPaths?: string[];
@@ -296,7 +294,7 @@ type RouteMatchResult = {
 	params: Record<string, string>;
 };
 
-const findRouteMatch = (pathname: string): RouteMatchResult | undefined => {
+export const findRouteMatch = (pathname: string): RouteMatchResult | undefined => {
 	for (const descriptor of routeDescriptors) {
 		if (!descriptor.path) {
 			continue;
