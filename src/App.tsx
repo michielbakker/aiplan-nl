@@ -10,10 +10,6 @@ import PlanDetail from "./pages/PlanDetail";
 import Article from "./pages/Article";
 import OnsVoorstel from "./pages/OnsVoorstel";
 import Nadi from "./pages/Nadi";
-import MoonshotNadi from "./pages/moonshots/MoonshotNadi";
-import MoonshotRoboticsLab from "./pages/moonshots/MoonshotRoboticsLab";
-import MoonshotAILab from "./pages/moonshots/MoonshotAILab";
-import MoonshotDataFoundries from "./pages/moonshots/MoonshotDataFoundries";
 import ScrollToTop from "./components/ScrollToTop";
 import RouteMetadataHelmet from "./components/RouteMetadataHelmet";
 import {
@@ -32,10 +28,6 @@ const componentMap: Record<RouteComponentKey, ComponentType> = {
 	Index,
 	Article,
 	Nadi,
-	MoonshotNadi,
-	MoonshotRoboticsLab,
-	MoonshotAILab,
-	MoonshotDataFoundries,
 	OnsVoorstel,
 	PlanDetail,
 	NotFound,

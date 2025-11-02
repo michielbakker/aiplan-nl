@@ -1,14 +1,24 @@
 User-agent: Googlebot
+Allow: /ons-voorstel
+Disallow: /ons-voorstel/
 Allow: /
 
 User-agent: Bingbot
+Allow: /ons-voorstel
+Disallow: /ons-voorstel/
 Allow: /
 
 User-agent: Twitterbot
+Allow: /ons-voorstel
+Disallow: /ons-voorstel/
 Allow: /
 
 User-agent: facebookexternalhit
+Allow: /ons-voorstel
+Disallow: /ons-voorstel/
 Allow: /
 
 User-agent: *
+Allow: /ons-voorstel
+Disallow: /ons-voorstel/
 Allow: /

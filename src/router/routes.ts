@@ -37,10 +37,6 @@ export type RouteComponentKey =
 	| "Index"
 	| "Article"
 	| "Nadi"
-	| "MoonshotNadi"
-	| "MoonshotRoboticsLab"
-	| "MoonshotAILab"
-	| "MoonshotDataFoundries"
 	| "OnsVoorstel"
 	| "PlanDetail"
 	| "NotFound";
@@ -198,46 +194,6 @@ export const routeDescriptors: RouteDescriptor[] = [
 			title: "NADI: Een Nederlandse DARPA voor doorbraken | AI Plan NL",
 			description:
 				"Waarom Nederland een Nationaal Agentschap voor Disruptieve Innovatie nodig heeft en hoe het kan slagen.",
-		},
-	},
-	{
-		path: "/moonshots/nadi",
-		component: "MoonshotNadi",
-		metadata: {
-			path: "/moonshots/nadi",
-			title: "Moonshot: Nationaal Agentschap voor Disruptieve Innovatie | AI Plan NL",
-			description:
-				"Een onafhankelijke organisatie naar DARPA-voorbeeld die onmogelijke doorbraken voor Nederland organiseert.",
-		},
-	},
-	{
-		path: "/moonshots/robotics-lab",
-		component: "MoonshotRoboticsLab",
-		metadata: {
-			path: "/moonshots/robotics-lab",
-			title: "Moonshot: Foundational Robotics Lab | AI Plan NL",
-			description:
-				"Een nationaal lab dat fysieke AI en robotica inzet om productiviteit en autonomie van Nederland te versterken.",
-		},
-	},
-	{
-		path: "/moonshots/ai-lab",
-		component: "MoonshotAILab",
-		metadata: {
-			path: "/moonshots/ai-lab",
-			title: "Moonshot: Nationaal AI Lab | AI Plan NL",
-			description:
-				"Een publiek-privaat AI-lab dat onderzoek, talent en industrie verbindt voor betrouwbare en toepasbare AI.",
-		},
-	},
-	{
-		path: "/moonshots/data-foundries",
-		component: "MoonshotDataFoundries",
-		metadata: {
-			path: "/moonshots/data-foundries",
-			title: "Moonshot: Nationale Data Foundries voor sectorinnovatie | AI Plan NL",
-			description:
-				"Een nationale data-infrastructuur die hoogwaardige datasets ontwikkelt en beschikbaar stelt om innovatiebarrières in sleutel­sectoren te doorbreken.",
 		},
 	},
 	{
